@@ -23,6 +23,8 @@ class StatusForm extends Component
         ]);
 
         $this->reset('content');
+
+        $this->emit('statusCreated');
     }
 
     public function render(): View
