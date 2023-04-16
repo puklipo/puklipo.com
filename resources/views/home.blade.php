@@ -1,7 +1,7 @@
 <x-main-layout>
-    @auth
+    @can('admin')
         <livewire:status-form></livewire:status-form>
-    @endauth
+    @endcan
 
     <livewire:status-index></livewire:status-index>
 </x-main-layout>
