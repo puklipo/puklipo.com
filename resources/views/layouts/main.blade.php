@@ -16,8 +16,10 @@
 
         @livewireStyles
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+    <body class="font-sans antialiased bg-white dark:bg-gray-900">
+        <div class="min-h-screen p-6 prose prose-indigo dark:prose-invert prose-md mx-auto">
+            @include('layouts.header')
+
             <!-- Page Content -->
             <main>
                 {{ $slot }}
