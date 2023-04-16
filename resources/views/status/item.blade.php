@@ -9,6 +9,6 @@
     </div>
 
     <div class="break-all">
-        <div>{{ $status->content }}</div>
+        <div>{{ \App\Support\Markdown::parse($status->content) }}</div>
     </div>
 </div>
