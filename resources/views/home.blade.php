@@ -8,4 +8,8 @@
             </div>
         </div>
     </div>
+
+    @auth
+        <livewire:status-form></livewire:status-form>
+    @endauth
 </x-main-layout>
