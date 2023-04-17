@@ -8,7 +8,7 @@
         </time>
     </div>
 
-    <div class="break-all">
+    <div class="break-all p-1">
         <div>{{ \App\Support\Markdown::parse($status->content) }}</div>
     </div>
 </div>
