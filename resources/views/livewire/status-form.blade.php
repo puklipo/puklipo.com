@@ -19,5 +19,12 @@
                 {{ __('送信') }}
             </x-primary-button>
         </div>
+
+        @if(filled($content))
+            <div class="px-3 mt-4 break-all border rounded-md shadow-sm dark:border-gray-700">
+                <h4 class="font-bold text-gray-400">プレビュー</h4>
+                <div class="p-1">{{ \App\Support\Markdown::parse($content) }}</div>
+            </div>
+        @endif
     </form>
 </div>
