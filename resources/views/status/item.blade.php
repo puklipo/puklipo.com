@@ -14,4 +14,12 @@
     <div class="break-all p-1">
         <div>{{ \App\Support\Markdown::parse($status->content) }}</div>
     </div>
+
+    @can('admin')
+        <div class="flex justify-end">
+            <a href="{{ route('status.edit', $status) }}" class="p-1 no-underline hover:bg-indigo-100 hover:rounded-full">
+                edit
+            </a>
+        </div>
+    @endcan
 </div>
