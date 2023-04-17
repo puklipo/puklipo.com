@@ -4,7 +4,10 @@
             {{ $status->user->name }}
         </div>
         <time title="{{ $status->created_at }}">
-          {{ $status->created_at->diffForHumans() }}
+            <a href="{{ route('status.show', $status) }}"
+               class="no-underline text-gray-500">
+                {{ $status->created_at->diffForHumans() }}
+            </a>
         </time>
     </div>
 

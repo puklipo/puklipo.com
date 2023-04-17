@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Livewire\StatusShow;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'home')->name('home');
+
+Route::get('status/{status}', StatusShow::class)->name('status.show');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
