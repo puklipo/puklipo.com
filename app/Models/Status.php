@@ -17,6 +17,9 @@ class Status extends Model
 
     protected $fillable = [
         'content',
+        'twitter',
+        'nostr_id',
+        'created_at',
     ];
 
     public function user(): BelongsTo
