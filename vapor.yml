@@ -1,5 +1,5 @@
 id: 45668
-name: puklipo-com
+name: pcs-status
 environments:
     production:
         memory: 1024
