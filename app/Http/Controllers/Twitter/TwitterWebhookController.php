@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Twitter;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Validation\Rule;
 
 class TwitterWebhookController extends Controller
@@ -24,6 +25,7 @@ class TwitterWebhookController extends Controller
         User::find(1)->statuses()->create([
             'content' => trim($request->json('content')),
             'twitter' => trim($request->json('link')),
+            'created_at' => Carbon::parse(trim($request->json('created_at')))->toDateTimeString(),
         ]);
 
         return 'OK';
