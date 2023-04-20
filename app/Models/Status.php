@@ -33,8 +33,6 @@ class Status extends Model implements Feedable
 
     public function toFeedItem(): FeedItem
     {
-        $this->load('user');
-
         return FeedItem::create([
             'id' => $this->id,
             'title' => $this->created_at,
