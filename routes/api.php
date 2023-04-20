@@ -19,4 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware(['auth:sanctum', 'can:admin'])->post('twitter/webhook', TwitterWebhookController::class);
+Route::middleware('auth:sanctum')
+    ->post('twitter/webhook', TwitterWebhookController::class)
+    ->can('admin');
