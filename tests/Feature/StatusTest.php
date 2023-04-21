@@ -67,7 +67,7 @@ class StatusTest extends TestCase
             ->get(route('status.show', $status));
 
         $response->assertSuccessful()
-            ->assertSeeText('edit');
+            ->assertSee(route('status.edit', $status));
     }
 
     public function test_show_guest(): void
@@ -80,7 +80,7 @@ class StatusTest extends TestCase
         $response = $this->get(route('status.show', $status));
 
         $response->assertSuccessful()
-            ->assertDontSeeText('edit');
+            ->assertDontSee(route('status.edit', $status));
     }
 
     public function test_edit_admin(): void
