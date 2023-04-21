@@ -19,7 +19,9 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'home')->name('home');
 
 Route::get('status/{status}', StatusShow::class)->name('status.show');
-Route::get('status/{status}/edit', StatusEdit::class)->name('status.edit');
+Route::get('status/{status}/edit', StatusEdit::class)
+    ->can('admin')
+    ->name('status.edit');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
