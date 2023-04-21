@@ -46,6 +46,7 @@ class Status extends Model implements Feedable
     public function getFeedItems(): Collection
     {
         return static::with('user')
+            ->where('user_id', 1)
             ->latest()
             ->take(20)
             ->get();
