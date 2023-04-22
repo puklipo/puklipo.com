@@ -11,13 +11,28 @@ class StatusIndex extends Component
 {
     use WithPagination;
 
+    protected bool $scroll = true;
+
     protected $listeners = ['statusCreated' => 'statusCreated'];
 
-    public function statusCreated(): View
+    public function statusCreated(bool $scroll = false): View
     {
+        //新規投稿後は自動スクロールしない。
+        $this->scroll = $scroll;
+
         $this->resetPage();
 
         return $this->render();
+    }
+
+    public function updatedPage($page): void
+    {
+        if (!$this->scroll) {
+            return;
+        }
+
+        //ページが変わった時に一番上にスクロール。
+        $this->dispatchBrowserEvent('page-updated', ['page' => $page]);
     }
 
     public function render(): View
