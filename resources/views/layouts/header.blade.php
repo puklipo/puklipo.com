@@ -4,7 +4,7 @@
     <div></div>
 
     <div class="mt-3">
-        <a href="https://github.com/pop-culture-studio" class="no-underline inline-flex" target="_blank">
+        <a href="https://github.com/pop-culture-studio" class="text-black no-underline inline-flex" target="_blank">
             <x-icon.github/>
         </a>
     </div>
