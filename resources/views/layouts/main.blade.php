@@ -32,7 +32,7 @@
             </main>
 
             <aside class="sm:col-span-1">
-                @include('side')
+                @include('side.side')
             </aside>
         </div>
 
