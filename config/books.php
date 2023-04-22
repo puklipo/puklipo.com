@@ -2,6 +2,10 @@
 
 return [
     [
+        'title' => 'Laravel再入門 Vol.4 一人用Twitterもどきを作る',
+        'url' => 'https://zenn.dev/pcs_engineer/books/re-laravel-4',
+    ],
+    [
         'title' => 'Laravel再入門 Vol.3 ChatGPTが使えるLINE botを作る',
         'url' => 'https://zenn.dev/pcs_engineer/books/re-laravel-3',
     ],
