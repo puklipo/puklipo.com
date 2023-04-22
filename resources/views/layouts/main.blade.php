@@ -19,13 +19,21 @@
         @livewireStyles
     </head>
     <body class="font-sans antialiased bg-white dark:bg-gray-900">
-        <div class="min-h-screen p-6 prose prose-indigo dark:prose-invert prose-md mx-auto">
-            @include('layouts.header')
+    @auth
+        @include('layouts.navigation')
+    @endauth
 
+        <div class="min-h-screen p-6 mx-auto grid grid-cols-1 sm:grid-cols-3">
             <!-- Page Content -->
-            <main>
+            <main class="prose prose-indigo dark:prose-invert prose-md sm:col-span-2">
+                @include('layouts.header')
+
                 {{ $slot }}
             </main>
+
+            <aside class="sm:col-span-1">
+                @include('side')
+            </aside>
         </div>
 
         @livewireScripts
