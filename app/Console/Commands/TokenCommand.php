@@ -26,7 +26,7 @@ class TokenCommand extends Command
      */
     public function handle(): void
     {
-        $token = User::find(1)->createToken('api_token');
+        $token = User::find(config('puklipo.users.admin'))->createToken('api_token');
 
         $this->info($token->plainTextToken);
     }
