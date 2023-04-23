@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Status;
+use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\View\View;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -13,7 +14,10 @@ class StatusIndex extends Component
 
     protected bool $scroll = true;
 
-    protected $listeners = ['statusCreated' => 'statusCreated'];
+    protected $listeners = [
+        'statusCreated' => 'statusCreated',
+        'updatedPage' => 'updatedPage',
+    ];
 
     public function statusCreated(bool $scroll = false): View
     {
@@ -40,6 +44,10 @@ class StatusIndex extends Component
         return view('livewire.status-index')
             ->with([
                 'statuses' => Status::with('user')
+                    ->when(session()->has('status_filter'),
+                        fn (Builder $query) => $query->whereIntegerInRaw('user_id', session('status_filter', collect(config('puklipo.users'))
+                            ->values()
+                            ->toArray())))
                     ->latest()
                     ->simplePaginate(),
             ]);
