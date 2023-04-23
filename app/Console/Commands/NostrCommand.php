@@ -33,7 +33,7 @@ class NostrCommand extends Command
             limit: 50,
         );
 
-        $user = User::findOrFail(2);
+        $user = User::findOrFail(config('puklipo.users.tips'));
 
         collect($notes)
             ->each(fn ($note) => $user->statuses()->updateOrCreate([
