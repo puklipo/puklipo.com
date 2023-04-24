@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>@isset($title){{ $title }} | @endisset{{ config('app.name', 'Laravel') }}</title>
+
+        @isset($description)<meta name="description" content="{{ $description }}">
+            <x-ogp :title="$title ?? null" :description="$description"></x-ogp>
+        @endisset
 
         <x-feed-links />
 
