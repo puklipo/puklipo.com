@@ -18,6 +18,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         @livewireStyles
+
+        @includeIf('layouts.ga')
     </head>
     <body class="font-sans antialiased bg-white dark:bg-gray-900">
     @auth
