@@ -14,7 +14,7 @@
         </time>
     </div>
 
-    <div class="break-all p-1">
+    <div class="break-all px-3">
         <div>{{ \App\Support\Markdown::parse($status->content) }}</div>
     </div>
 
