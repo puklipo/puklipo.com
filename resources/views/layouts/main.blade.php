@@ -24,9 +24,9 @@
         @include('layouts.navigation')
     @endauth
 
-        <div class="min-h-screen p-3 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3">
+        <div class="min-h-screen max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 sm:divide-x">
             <!-- Page Content -->
-            <main class="prose prose-indigo dark:prose-invert prose-md sm:col-span-2">
+            <main class="prose prose-indigo dark:prose-invert prose-md max-w-none sm:col-span-2">
                 @include('layouts.header')
 
                 {{ $slot }}

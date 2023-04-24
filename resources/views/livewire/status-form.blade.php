@@ -1,4 +1,4 @@
-<div class="py-3">
+<div class="mx-3 py-3">
     <form wire:submit.prevent="create">
         @csrf
 

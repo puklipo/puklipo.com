@@ -1,4 +1,4 @@
-<div class="p-3 text-white bg-indigo-400 dark:bg-gray-800 flex flex-row gap-2">
+<div class="p-3 text-white bg-indigo-400 dark:bg-gray-700 flex flex-row gap-2">
     <span class="font-bold text-sm">{{ __('フィルター') }}</span>
 
     @foreach($users as $user)
