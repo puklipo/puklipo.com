@@ -20,3 +20,4 @@ yarn-error.log
 .vapor/
 .env.staging
 /public/vendor
+_ide_helper_models.php
