@@ -15,7 +15,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
 
-        $schedule->command(NostrBotCommand::class)->everyThirtyMinutes();
+        $schedule->command(NostrBotCommand::class)->hourlyAt(30);
     }
 
     /**
