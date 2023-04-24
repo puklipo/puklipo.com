@@ -16,6 +16,7 @@
         "livewire/livewire": "^2.12",
         "revolution/laravel-nostr": "^0.1.4",
         "revolution/laravel-str-mixins": "^2.4",
+        "spatie/laravel-sitemap": "^6.2",
         "spatie/laravel-feed": "^4.2"
     },
     "require-dev": {
