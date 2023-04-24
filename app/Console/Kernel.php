@@ -2,7 +2,7 @@
 
 namespace App\Console;
 
-use App\Console\Commands\NostrCommand;
+use App\Console\Commands\NostrBotCommand;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -15,7 +15,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
 
-        $schedule->command(NostrCommand::class)->everyThirtyMinutes();
+        $schedule->command(NostrBotCommand::class)->everyThirtyMinutes();
     }
 
     /**

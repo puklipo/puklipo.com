@@ -6,14 +6,14 @@ use App\Models\User;
 use Illuminate\Console\Command;
 use Revolution\Nostr\Facades\Social;
 
-class NostrCommand extends Command
+class NostrBotCommand extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'status:nostr';
+    protected $signature = 'status:nostr-bot';
 
     /**
      * The console command description.
@@ -28,7 +28,7 @@ class NostrCommand extends Command
     public function handle(): void
     {
         $notes = Social::notes(
-            authors: [config('nostr.keys.pk')],
+            authors: [config('nostr.keys.bot_pk')],
             since: cache('nostr_since', now()->subDays(7)->timestamp),
             limit: 50,
         );

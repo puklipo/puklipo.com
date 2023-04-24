@@ -7,7 +7,7 @@ return [
     'api_base' => env('NOSTR_API_BASE', 'https://nostr-vercel-api.vercel.app/api/'),
 
     'keys' => [
-        'pk' => env('NOSTR_PK'),
+        'bot_pk' => env('NOSTR_PK'),
     ],
 
     /**
