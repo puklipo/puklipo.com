@@ -37,6 +37,8 @@
             </aside>
         </div>
 
+        @include('layouts.footer')
+
         @livewireScripts
     </body>
 </html>
