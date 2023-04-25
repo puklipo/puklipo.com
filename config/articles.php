@@ -3,7 +3,7 @@
 return [
     [
         'title' => 'LaravelはMVCではない',
-        'url' => 'https://zenn.dev/pcs_engineer/articles/laravel-is-not-mvc',
+        'url' => 'https://github.com/pop-culture-studio/articles/blob/main/laravel-is-not-mvc.md',
     ],
     [
         'title' => 'Laravel 開発環境構築 Mac版',
