@@ -19,7 +19,7 @@ class Markdown
             ],
             'allow_unsafe_links' => false,
             'disallowed_raw_html' => [
-                'disallowed_tags' => ['title', 'textarea', 'style', 'xmp', 'noembed', 'noframes', 'script', 'plaintext'],
+                'disallowed_tags' => ['title', 'textarea', 'style', 'xmp', 'noembed', 'noframes', 'plaintext'],
             ],
         ], $options);
 
