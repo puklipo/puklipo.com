@@ -18,7 +18,7 @@ class StatusShow extends Component
 
     public function render(): View
     {
-        $title = $this->status->created_at;
+        $title = $this->status->created_at.' '.config('app.name');
         $description = str($this->status->content)->replace(PHP_EOL, ' ')->truncate(200)->value();
 
         return view('livewire.status-show')
