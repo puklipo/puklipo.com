@@ -15,16 +15,14 @@ class SitemapController extends Controller
      */
     public function __invoke(Request $request): string
     {
-        return cache()->remember('sitemap', now()->addHours(12), function () {
-            $sitemap = Sitemap::create()
-                ->add(Url::create('/')->setPriority(1.0));
+        $sitemap = Sitemap::create()
+            ->add(Url::create('/')->setPriority(1.0));
 
-            User::find(1)->statuses()->latest()->lazy()->each(fn (Status $status) => $sitemap->add(
-                Url::create(route('status.show', $status))
-                    ->setLastModificationDate($status->updated_at)
-            ));
+        User::find(1)->statuses()->latest()->lazy()->each(fn (Status $status) => $sitemap->add(
+            Url::create(route('status.show', $status))
+                ->setLastModificationDate($status->updated_at)
+        ));
 
-            return $sitemap->render();
-        });
+        return $sitemap->render();
     }
 }
