@@ -4,10 +4,10 @@
     <div></div>
 
     <div class="mt-3 flex flex-row gap-2">
-        <a href="https://github.com/pop-culture-studio" class="text-gray-600 dark:text-white no-underline inline-flex" target="_blank">
+        <a href="https://github.com/pop-culture-studio" class="text-gray-600 dark:text-white no-underline inline-flex" title="GitHub" target="_blank">
             <x-icon.github/>
         </a>
-        <a href="{{ url('feed') }}" class="text-gray-600 dark:text-white no-underline inline-flex" target="_blank">
+        <a href="{{ url('feed') }}" class="text-gray-600 dark:text-white no-underline inline-flex" title="RSS/Feed" target="_blank">
             <x-icon.rss/>
         </a>
     </div>
