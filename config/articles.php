@@ -2,6 +2,10 @@
 
 return [
     [
+        'title' => 'フロントエンドのような開発体験が可能になるLaravel',
+        'url' => 'https://zenn.dev/pcs_engineer/articles/laracon-us-2023',
+    ],
+    [
         'title' => 'LaravelはMVCではない',
         'url' => 'https://github.com/pop-culture-studio/articles/blob/main/laravel-is-not-mvc.md',
     ],
