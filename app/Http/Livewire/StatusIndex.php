@@ -31,7 +31,7 @@ class StatusIndex extends Component
 
     public function updatedPage($page): void
     {
-        if (!$this->scroll) {
+        if (! $this->scroll) {
             return;
         }
 
