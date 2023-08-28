@@ -2,9 +2,9 @@
 
 namespace Tests\Feature;
 
-use App\Http\Livewire\StatusEdit;
-use App\Http\Livewire\StatusForm;
-use App\Http\Livewire\StatusIndex;
+use App\Livewire\StatusEdit;
+use App\Livewire\StatusForm;
+use App\Livewire\StatusIndex;
 use App\Models\Status;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -26,7 +26,7 @@ class StatusTest extends TestCase
             ->set('content', 'test')
             ->call('create')
             ->assertSet('content', '')
-            ->assertEmitted('statusCreated');
+            ->assertDispatched('statusCreated');
 
         $this->assertDatabaseHas('statuses', [
             'content' => 'test',
@@ -40,7 +40,7 @@ class StatusTest extends TestCase
             ->set('content', 'test')
             ->call('create')
             ->assertForbidden()
-            ->assertNotEmitted('statusCreated');
+            ->assertNotDispatched('statusCreated');
 
         $this->assertDatabaseMissing('statuses', [
             'content' => 'test',
@@ -51,9 +51,9 @@ class StatusTest extends TestCase
     public function test_index_created_event(): void
     {
         Livewire::test(StatusIndex::class)
-            ->set('page', 2)
-            ->emit('statusCreated')
-            ->assertSet('page', 1);
+            ->set('paginators', ['page' => 2])
+            ->dispatch('statusCreated')
+            ->assertSet('paginators', ['page' => 1]);
     }
 
     public function test_show_admin(): void
@@ -118,7 +118,7 @@ class StatusTest extends TestCase
         $this->actingAs($status->user);
 
         Livewire::test(StatusEdit::class, ['status' => $status])
-            ->set('status.content', 'test')
+            ->set('content', 'test')
             ->call('update')
             ->assertRedirect();
 
@@ -135,7 +135,7 @@ class StatusTest extends TestCase
             ->first();
 
         Livewire::test(StatusEdit::class, ['status' => $status])
-            ->set('status.content', 'test')
+            ->set('content', 'test')
             ->call('update')
             ->assertForbidden()
             ->assertNoRedirect();

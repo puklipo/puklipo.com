@@ -1,5 +1,5 @@
 <div class="mx-3 py-3">
-    <form wire:submit.prevent="create">
+    <form wire:submit="create">
         @csrf
 
         <div>
@@ -7,7 +7,7 @@
             <x-textarea id="content" name="content" title="メッセージ"
                         class="block mt-1 w-full"
                         rows="3"
-                        wire:model="content"
+                        wire:model.live="content"
                         wire:ignore
                         required autofocus>{{ old('content') }}</x-textarea>
 
