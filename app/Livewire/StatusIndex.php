@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Models\Status;
 use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\View\View;
+use Livewire\Attributes\On;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -14,11 +15,7 @@ class StatusIndex extends Component
 
     protected bool $scroll = true;
 
-    protected $listeners = [
-        'statusCreated' => 'statusCreated',
-        'updatedPage' => 'updatedPage',
-    ];
-
+    #[On('statusCreated')]
     public function statusCreated(bool $scroll = false): View
     {
         //新規投稿後は自動スクロールしない。
@@ -35,8 +32,8 @@ class StatusIndex extends Component
             return;
         }
 
-        //ページが変わった時に一番上にスクロール。
-        $this->dispatchBrowserEvent('page-updated', ['page' => $page]);
+        //ブラウザ側へイベント発行。ページが変わった時に一番上にスクロール。
+        $this->dispatch('page-updated', page: $page);
     }
 
     public function render(): View

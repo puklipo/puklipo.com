@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Models\User;
 use Illuminate\Support\Collection;
@@ -41,7 +41,7 @@ class StatusFilter extends Component
 
         session(['status_filter' => $this->filter]);
 
-        $this->emit('statusCreated', true);
+        $this->dispatch('statusCreated', scroll: true);
     }
 
     public function render(): View

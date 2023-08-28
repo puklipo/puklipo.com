@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Http\Livewire\StatusFilter;
+use App\Livewire\StatusFilter;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Livewire\Livewire;
@@ -17,7 +17,7 @@ class FilterTest extends TestCase
         Livewire::test(StatusFilter::class)
             ->call('filterChange', 1)
             ->assertSessionHas('status_filter')
-            ->assertEmitted('statusCreated', true);
+            ->assertDispatched('statusCreated', scroll: true);
     }
 
     public function test_filter_failed(): void
@@ -25,6 +25,6 @@ class FilterTest extends TestCase
         Livewire::test(StatusFilter::class)
             ->call('filterChange', 100)
             ->assertSessionMissing('status_filter')
-            ->assertNotEmitted('statusCreated', true);
+            ->assertNotDispatched('statusCreated', scroll: true);
     }
 }

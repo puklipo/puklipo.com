@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SitemapController;
-use App\Http\Livewire\StatusEdit;
-use App\Http\Livewire\StatusShow;
+use App\Livewire\StatusEdit;
+use App\Livewire\StatusShow;
 use Illuminate\Support\Facades\Route;
 
 /*

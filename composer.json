@@ -13,7 +13,7 @@
         "laravel/vapor-cli": "^1.55",
         "laravel/vapor-core": "^2.29",
         "laravel/vapor-ui": "^1.7",
-        "livewire/livewire": "^2.12",
+        "livewire/livewire": "^3.0",
         "puklipo/laravel-vapor-gzip": "^1.1",
         "revolution/laravel-nostr": "^0.1.4",
         "revolution/laravel-str-mixins": "^2.4",
