@@ -23,3 +23,7 @@ Livewire.hook('commit', ({ component, commit, respond, succeed, fail }) => {
         // Runs if some part of the request failed...
     })
 })
+
+document.addEventListener('livewire:navigated', () => {
+    hljs.highlightAll();
+})

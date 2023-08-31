@@ -21,7 +21,7 @@
     @can('admin')
         <div class="flex justify-end">
             <a href="{{ route('status.edit', $status) }}"
-               class="p-1 no-underline hover:bg-indigo-100 hover:rounded-full">
+               class="p-1 no-underline hover:bg-indigo-100 hover:rounded-full" wire:navigate>
                 <x-icon.three-dot/>
             </a>
         </div>

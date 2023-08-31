@@ -35,6 +35,6 @@ class StatusEdit extends Component
             'content' => trim($this->content),
         ])->save();
 
-        $this->redirect(route('status.show', $this->status));
+        $this->redirect(route('status.show', $this->status), navigate: true);
     }
 }
