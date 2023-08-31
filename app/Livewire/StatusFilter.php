@@ -6,13 +6,16 @@ use App\Models\User;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;
-use Illuminate\View\View;
+use Livewire\Attributes\Computed;
+use Livewire\Attributes\Locked;
 use Livewire\Component;
 
 class StatusFilter extends Component
 {
+    #[Locked]
     protected array $default_filter = [1, 2];
 
+    #[Locked]
     public array $filter;
 
     public function mount(): void
@@ -44,11 +47,9 @@ class StatusFilter extends Component
         $this->dispatch('statusCreated', scroll: true);
     }
 
-    public function render(): View
+    #[Computed]
+    public function users(): Collection
     {
-        return view('livewire.status-filter')
-            ->with([
-                'users' => User::whereIn('id', $this->default_filter)->get(),
-            ]);
+        return User::whereIn('id', $this->default_filter)->get();
     }
 }

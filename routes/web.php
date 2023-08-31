@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SitemapController;
 use App\Livewire\StatusEdit;
+use App\Livewire\StatusIndex;
 use App\Livewire\StatusShow;
 use Illuminate\Support\Facades\Route;
 
@@ -17,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'home')->name('home');
+Route::get('/', StatusIndex::class)->name('home');
 
 Route::get('status/{status}', StatusShow::class)->name('status.show');
 Route::get('status/{status}/edit', StatusEdit::class)

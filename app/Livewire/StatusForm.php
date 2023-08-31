@@ -5,7 +5,6 @@ namespace App\Livewire;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
-use Illuminate\View\View;
 use Livewire\Attributes\Rule;
 use Livewire\Component;
 
@@ -32,10 +31,5 @@ class StatusForm extends Component
         $this->reset('content');
 
         $this->dispatch('statusCreated');
-    }
-
-    public function render(): View
-    {
-        return view('livewire.status-form');
     }
 }

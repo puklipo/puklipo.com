@@ -38,15 +38,15 @@ class StatusIndex extends Component
 
     public function render(): View
     {
+        $statuses = Status::with('user')
+            ->when(session()->has('status_filter'),
+                fn (Builder $query) => $query->whereIntegerInRaw('user_id', session('status_filter', collect(config('puklipo.users'))
+                    ->values()
+                    ->toArray())))
+            ->latest()
+            ->simplePaginate();
+
         return view('livewire.status-index')
-            ->with([
-                'statuses' => Status::with('user')
-                    ->when(session()->has('status_filter'),
-                        fn (Builder $query) => $query->whereIntegerInRaw('user_id', session('status_filter', collect(config('puklipo.users'))
-                            ->values()
-                            ->toArray())))
-                    ->latest()
-                    ->simplePaginate(),
-            ]);
+            ->with(compact('statuses'));
     }
 }
