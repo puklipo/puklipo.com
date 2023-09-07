@@ -2,6 +2,10 @@
 
 return [
     [
+        'title' => 'Laravel Collectiveが終了する',
+        'url' => 'https://zenn.dev/pcs_engineer/articles/laravel-collective',
+    ],
+    [
         'title' => 'フロントエンドのような開発体験が可能になるLaravel',
         'url' => 'https://zenn.dev/pcs_engineer/articles/laracon-us-2023',
     ],
