@@ -4,7 +4,8 @@ namespace App\Livewire;
 
 use App\Models\Status;
 use Illuminate\Contracts\Database\Query\Builder;
-use Illuminate\View\View;
+use Illuminate\Contracts\Pagination\Paginator;
+use Livewire\Attributes\Computed;
 use Livewire\Attributes\On;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -16,14 +17,24 @@ class StatusIndex extends Component
     protected bool $scroll = true;
 
     #[On('statusCreated')]
-    public function statusCreated(bool $scroll = false): View
+    public function statusCreated(bool $scroll = false): void
     {
         //新規投稿後は自動スクロールしない。
         $this->scroll = $scroll;
 
         $this->resetPage();
+    }
 
-        return $this->render();
+    #[Computed]
+    public function statuses(): Paginator
+    {
+        return Status::with('user')
+            ->when(session()->has('status_filter'),
+                fn (Builder $query) => $query->whereIntegerInRaw('user_id', session('status_filter', collect(config('puklipo.users'))
+                    ->values()
+                    ->toArray())))
+            ->latest()
+            ->simplePaginate();
     }
 
     public function updatedPage($page): void
@@ -34,19 +45,5 @@ class StatusIndex extends Component
 
         //ブラウザ側へイベント発行。ページが変わった時に一番上にスクロール。
         $this->dispatch('page-updated', page: $page);
-    }
-
-    public function render(): View
-    {
-        $statuses = Status::with('user')
-            ->when(session()->has('status_filter'),
-                fn (Builder $query) => $query->whereIntegerInRaw('user_id', session('status_filter', collect(config('puklipo.users'))
-                    ->values()
-                    ->toArray())))
-            ->latest()
-            ->simplePaginate();
-
-        return view('livewire.status-index')
-            ->with(compact('statuses'));
     }
 }
