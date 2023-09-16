@@ -50,6 +50,6 @@ class StatusFilter extends Component
     #[Computed]
     public function users(): Collection
     {
-        return User::whereIn('id', $this->default_filter)->get();
+        return User::whereIntegerInRaw('id', $this->default_filter)->get();
     }
 }
