@@ -25,7 +25,7 @@
 
         @includeIf('layouts.ga')
     </head>
-    <body class="font-sans antialiased bg-white dark:bg-gray-900">
+    <body class="font-sans antialiased bg-white dark:bg-gray-900 relative">
     @auth
         @include('layouts.navigation')
     @endauth
@@ -44,6 +44,14 @@
         </div>
 
         @include('layouts.footer')
+
+        <div class="pcs:back-to-top">
+            <a href="#" class="pcs:back-to-top-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                </svg>
+            </a>
+        </div>
 
         @livewireScripts
     </body>
