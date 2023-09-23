@@ -13,7 +13,7 @@ class DiscussionCreate extends Component
 {
     use AuthorizesRequests;
 
-    #[Rule('required|string')]
+    #[Rule('required|string|max:255')]
     public string $title = '';
 
     #[Rule('required|string')]
