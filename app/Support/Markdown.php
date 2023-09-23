@@ -25,4 +25,20 @@ class Markdown
 
         return new HtmlString(Str::markdown($text, $config));
     }
+
+    /**
+     * Parse the given Markdown text into HTML.
+     */
+    public static function escape(string $text, array $options = []): HtmlString
+    {
+        $config = array_merge([
+            'html_input' => 'escape',
+            'renderer' => [
+                'soft_break'      => "<br>\n",
+            ],
+            'allow_unsafe_links' => false,
+        ], $options);
+
+        return new HtmlString(Str::markdown($text, $config));
+    }
 }
