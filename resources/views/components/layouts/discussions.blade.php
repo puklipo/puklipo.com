@@ -33,13 +33,15 @@
         <div class="min-h-screen max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 sm:divide-x">
             <!-- Page Content -->
             <main class="prose prose-indigo dark:prose-invert prose-md max-w-none sm:col-span-2">
-                @include('layouts.header')
+                <header class="p-6 bg-white dark:bg-gray-800">
+                    <h1><a href="{{ route('discussion') }}" class="no-underline">Laravel専用相談所</a></h1>
+                </header>
 
                 {{ $slot }}
             </main>
 
-            <aside class="sm:col-span-1">
-                @include('side.side')
+            <aside class="sm:col-span-1 bg-indigo-50 dark:bg-gray-800">
+                @include('discussions.side')
             </aside>
         </div>
 

@@ -2,6 +2,10 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SitemapController;
+use App\Livewire\DiscussionIndex;
+use App\Livewire\DiscussionMy;
+use App\Livewire\DiscussionPrivate;
+use App\Livewire\DiscussionShow;
 use App\Livewire\StatusEdit;
 use App\Livewire\StatusIndex;
 use App\Livewire\StatusShow;
@@ -24,6 +28,17 @@ Route::get('status/{status}', StatusShow::class)->name('status.show');
 Route::get('status/{status}/edit', StatusEdit::class)
     ->can('admin')
     ->name('status.edit');
+
+Route::get('discussions', DiscussionIndex::class)
+    ->name('discussion');
+Route::get('discussions/my', DiscussionMy::class)
+    ->name('discussion.my')->middleware(['auth', 'verified']);
+Route::get('discussions/private', DiscussionPrivate::class)
+    ->name('discussion.private')
+    ->can('admin');
+Route::get('discussions/{discussion}', DiscussionShow::class)
+    ->name('discussion.show')
+    ->whereUlid('discussion');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
