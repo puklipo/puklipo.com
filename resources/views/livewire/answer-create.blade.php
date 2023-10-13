@@ -1,5 +1,5 @@
 
-<div class="m-6 p-6 bg-indigo-100 dark:bg-gray-800 border border-2 border-indigo-500 rounded-md">
+<div class="m-3 sm:m-6 p-3 sm:p-6 bg-indigo-100 dark:bg-gray-800 border border-2 border-indigo-500 rounded-md">
 
     <form wire:submit="create">
         @csrf

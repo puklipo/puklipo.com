@@ -5,7 +5,7 @@
 
     @include('discussions.nav')
 
-    <div class="mx-6 px-6" x-data @page-updated.window="$el.scrollIntoView({behavior: 'smooth'})">
+    <div class="mx-3 px-3" x-data @page-updated.window="$el.scrollIntoView({behavior: 'smooth'})">
         @forelse($this->discussions as $discussion)
             <div>
                 <h2>
