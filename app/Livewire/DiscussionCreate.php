@@ -19,11 +19,11 @@ class DiscussionCreate extends Component
     #[Rule('required|string')]
     public string $content = '';
 
-    #[Rule('required|string')]
-    public string $version = '10.x';
-
     #[Rule('required|boolean')]
     public bool $private = false;
+
+    #[Rule('required|string')]
+    public string $version = '10.x';
 
     #[Locked]
     public array $versions = [
