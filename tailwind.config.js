@@ -14,7 +14,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', '"M PLUS Rounded 1c"', ...defaultTheme.fontFamily.sans],
+                sans: ['Figtree', '"M PLUS 2"', ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 indigo: colors.orange
