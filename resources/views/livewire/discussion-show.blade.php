@@ -1,11 +1,11 @@
 <div class="mx-3 px-3">
     <div class="">
         <h2 class="border-b-2 border-indigo-500">質問</h2>
-        <h3>
+        <h3 class="text-2xl">
             @if($discussion->private)
                 <x-icon.lock-closed class="inline-flex"></x-icon.lock-closed>
             @endif
-            [{{ $discussion->version }}]
+            <span class="font-normal">[{{ $discussion->version }}]</span>
             <a href="{{ route('discussion.show', $discussion) }}"
                class="no-underline hover:underline">{{ $discussion->title }}</a>
 

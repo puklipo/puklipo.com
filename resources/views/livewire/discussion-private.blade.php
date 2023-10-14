@@ -1,14 +1,14 @@
 <div>
     @include('discussions.nav')
 
-    <div class="mx-6 px-6" x-data @page-updated.window="$el.scrollIntoView({behavior: 'smooth'})">
+    <div class="mx-3 px-3" x-data @page-updated.window="$el.scrollIntoView({behavior: 'smooth'})">
         @foreach($this->discussions as $discussion)
             <div>
                 <h2>
                     @if($discussion->private)
                         <x-icon.lock-closed class="inline-flex"></x-icon.lock-closed>
                     @endif
-                    [{{ $discussion->version }}]
+                    <span class="font-normal">[{{ $discussion->version }}]</span>
                     <a href="{{ route('discussion.show', $discussion) }}"
                        class="no-underline hover:underline">{{ $discussion->title }}</a>
                 </h2>
