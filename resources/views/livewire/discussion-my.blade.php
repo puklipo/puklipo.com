@@ -1,8 +1,4 @@
 <div>
-    @auth
-        <livewire:discussion-create></livewire:discussion-create>
-    @endauth
-
     @include('discussions.nav')
 
     <div class="mx-3 px-3" x-data @page-updated.window="$el.scrollIntoView({behavior: 'smooth'})">
