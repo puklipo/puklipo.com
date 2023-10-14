@@ -13,6 +13,19 @@ class DiscussionCreate extends Component
 {
     use AuthorizesRequests;
 
+    #[Rule('required|string')]
+    /**
+     * @var string $version デフォルトバージョン
+     */
+    public string $version = '10.x';
+
+    #[Locked]
+    public array $versions = [
+        '11.x',
+        '10.x',
+        '9.x',
+    ];
+
     #[Rule('required|string|max:255')]
     public string $title = '';
 
@@ -21,15 +34,6 @@ class DiscussionCreate extends Component
 
     #[Rule('required|boolean')]
     public bool $private = false;
-
-    #[Rule('required|string')]
-    public string $version = '10.x';
-
-    #[Locked]
-    public array $versions = [
-        '10.x',
-        '9.x',
-    ];
 
     public function create(Request $request)
     {
