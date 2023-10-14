@@ -33,8 +33,8 @@
         <div class="min-h-screen max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 sm:divide-x">
             <!-- Page Content -->
             <main class="prose prose-indigo dark:prose-invert prose-md max-w-none sm:col-span-2">
-                <header class="p-6 bg-white dark:bg-gray-800">
-                    <h1><a href="{{ route('discussion') }}" class="no-underline">Laravel専用相談所</a></h1>
+                <header class="p-6 bg-indigo-500 dark:bg-gray-800">
+                    <h1 class="text-3xl sm:text-7xl"><a href="{{ route('discussion') }}" class="text-white hover:text-white no-underline">Laravel専用相談所</a></h1>
                 </header>
 
                 {{ $slot }}
