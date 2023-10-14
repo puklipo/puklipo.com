@@ -4,8 +4,8 @@
     <form wire:submit="create">
         @csrf
 
-        <div class="font-bold">
-            {{ auth()->user()->name ?? '匿名' }}
+        <div>
+            <span class="font-bold">{{ auth()->user()->name ?? '匿名' }}</span>で回答
         </div>
 
         <div>
