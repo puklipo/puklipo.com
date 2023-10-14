@@ -15,11 +15,7 @@
                     <span class="font-normal">[{{ $discussion->version }}]</span>
                     <a href="{{ route('discussion.show', $discussion) }}"
                        class="no-underline hover:underline">{{ $discussion->title }}</a>
-
                 </h2>
-                <div>
-                    回答 {{ $discussion->answers_count }}
-                </div>
                 <div>
                     <span class="font-bold">{{ $discussion->user->name ?? '匿名' }}</span>
                     <time class="text-gray-400" datetime="{{ $discussion->created_at }}" title="{{ $discussion->created_at }}">{{ $discussion->created_at->diffForHumans() }}</time>
