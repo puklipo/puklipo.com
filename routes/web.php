@@ -29,16 +29,7 @@ Route::get('status/{status}/edit', StatusEdit::class)
     ->can('admin')
     ->name('status.edit');
 
-Route::get('discussions', DiscussionIndex::class)
-    ->name('discussion');
-Route::get('discussions/my', DiscussionMy::class)
-    ->name('discussion.my')->middleware(['auth', 'verified']);
-Route::get('discussions/private', DiscussionPrivate::class)
-    ->name('discussion.private')
-    ->can('admin');
-Route::get('discussions/{discussion}', DiscussionShow::class)
-    ->name('discussion.show')
-    ->whereUlid('discussion');
+require __DIR__.'/discussion.php';
 
 Route::get('/dashboard', function () {
     return view('dashboard');
