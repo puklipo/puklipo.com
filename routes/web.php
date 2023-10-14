@@ -2,10 +2,6 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SitemapController;
-use App\Livewire\DiscussionIndex;
-use App\Livewire\DiscussionMy;
-use App\Livewire\DiscussionPrivate;
-use App\Livewire\DiscussionShow;
 use App\Livewire\StatusEdit;
 use App\Livewire\StatusIndex;
 use App\Livewire\StatusShow;
@@ -24,16 +20,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', StatusIndex::class)->name('home');
 
-Route::get('status/{status}', StatusShow::class)->name('status.show');
+Route::get('status/{status}', StatusShow::class)
+    ->name('status.show')
+    ->whereUlid('status');
 Route::get('status/{status}/edit', StatusEdit::class)
     ->can('admin')
-    ->name('status.edit');
+    ->name('status.edit')
+    ->whereUlid('status');
 
 require __DIR__.'/discussion.php';
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::view('/dashboard', 'dashboard')
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
