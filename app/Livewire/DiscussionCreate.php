@@ -42,7 +42,7 @@ class DiscussionCreate extends Component
         $this->validate();
 
         $discussion = $request->user()->discussions()->create([
-            'title' => trim($this->title),
+            'title' => str($this->title)->squish(),
             'content' => trim($this->content),
             'version' => trim($this->version),
             'private' => $this->private,
