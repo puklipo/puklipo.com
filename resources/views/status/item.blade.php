@@ -16,6 +16,10 @@
 
     <div class="break-all px-3">
         <div>{{ \App\Support\Markdown::parse($status->content) }}</div>
+
+        @if($status->user->id === config('puklipo.users.bot'))
+            <livewire:status-vote :$status></livewire:status-vote>
+        @endif
     </div>
 
     @can('admin')
