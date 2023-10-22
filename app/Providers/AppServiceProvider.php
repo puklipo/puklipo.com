@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Discussion;
 use App\Models\Status;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
@@ -26,6 +27,7 @@ class AppServiceProvider extends ServiceProvider
 
         Relation::morphMap([
             'status' => Status::class,
+            'discussion' => Discussion::class,
         ]);
     }
 }
