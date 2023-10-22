@@ -2,7 +2,7 @@
 
 return [
     'users' => [
-        'admin' => 1,
-        'tips' => 2,
+        'admin' => (int) env('ADMIN_ID', 1),
+        'tips' => (int) env('TIPS_ID', 2),
     ],
 ];
