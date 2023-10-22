@@ -18,7 +18,7 @@
         <div>{{ \App\Support\Markdown::parse($status->content) }}</div>
 
         @if($status->user->id === config('puklipo.users.tips'))
-            <livewire:status-vote :$status></livewire:status-vote>
+            <livewire:status-vote :$status wire:key="{{ $status->id }}"></livewire:status-vote>
         @endif
     </div>
 
