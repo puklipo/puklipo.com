@@ -4,7 +4,10 @@ namespace Tests\Feature;
 
 use App\Livewire\AnswerCreate;
 use App\Livewire\DiscussionCreate;
+use App\Livewire\DiscussionShow;
+use App\Livewire\StatusEdit;
 use App\Models\Discussion;
+use App\Models\Status;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
@@ -195,6 +198,80 @@ class DiscussionTest extends TestCase
             'content' => 'test',
             'user_id' => null,
             'discussion_id' => $discussion->id,
+        ]);
+    }
+
+    public function test_discussion_delete_admin(): void
+    {
+        $discussion = Discussion::factory(1)
+            ->forUser()
+            ->create()
+            ->first();
+
+        $this->actingAs($discussion->user);
+
+        Livewire::test(DiscussionShow::class, ['discussion' => $discussion])
+            ->call('delete')
+            ->assertRedirect();
+
+        $this->assertDatabaseMissing('discussions', [
+            'id' => $discussion->id,
+        ]);
+    }
+
+    public function test_answer_delete_admin(): void
+    {
+        $discussion = Discussion::factory(1)
+            ->forUser()
+            ->hasAnswers(1)
+            ->create()
+            ->first();
+
+        $answer = $discussion->answers->first();
+
+        $this->actingAs($discussion->user);
+
+        Livewire::test(DiscussionShow::class, ['discussion' => $discussion])
+            ->call('deleteAnswer', $answer->id)
+            ->assertRedirect();
+
+        $this->assertDatabaseMissing('answers', [
+            'id' => $answer->id,
+        ]);
+    }
+
+    public function test_discussion_delete_guest(): void
+    {
+        $discussion = Discussion::factory(1)
+            ->forUser()
+            ->create()
+            ->first();
+
+        Livewire::test(DiscussionShow::class, ['discussion' => $discussion])
+            ->call('delete')
+            ->assertForbidden();
+
+        $this->assertDatabaseHas('discussions', [
+            'id' => $discussion->id,
+        ]);
+    }
+
+    public function test_answer_delete_guest(): void
+    {
+        $discussion = Discussion::factory(1)
+            ->forUser()
+            ->hasAnswers(1)
+            ->create()
+            ->first();
+
+        $answer = $discussion->answers->first();
+
+        Livewire::test(DiscussionShow::class, ['discussion' => $discussion])
+            ->call('deleteAnswer', $answer->id)
+            ->assertForbidden();
+
+        $this->assertDatabaseHas('answers', [
+            'id' => $answer->id,
         ]);
     }
 }

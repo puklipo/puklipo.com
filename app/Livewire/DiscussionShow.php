@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use App\Models\Answer;
 use App\Models\Discussion;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
@@ -21,24 +22,30 @@ class DiscussionShow extends Component
         $this->discussion->load(['answers', 'answers.user']);
     }
 
-    public function delete()
+    /**
+     * @throws AuthorizationException
+     */
+    public function delete(): void
     {
         $this->authorize('delete', $this->discussion);
 
         $this->discussion->delete();
         unset($this->discussion);
 
-        return to_route('discussion');
+        $this->redirect(route('discussion'));
     }
 
-    public function deleteAnswer($id)
+    /**
+     * @throws AuthorizationException
+     */
+    public function deleteAnswer($id): void
     {
         $this->authorize('delete', $this->discussion);
 
         Answer::destroy($id);
         $this->discussion->load(['answers', 'answers.user']);
 
-        return to_route('discussion.show', $this->discussion);
+        $this->redirect(route('discussion.show', $this->discussion));
     }
 
     #[Layout('components.layouts.discussions')]
