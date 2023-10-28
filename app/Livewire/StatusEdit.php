@@ -37,4 +37,17 @@ class StatusEdit extends Component
 
         $this->redirect(route('status.show', $this->status), navigate: true);
     }
+
+    /**
+     * @throws AuthorizationException
+     */
+    public function delete(): void
+    {
+        $this->authorize('admin');
+
+        $this->status->delete();
+        unset($this->status);
+
+        $this->redirect(route('home'), navigate: true);
+    }
 }

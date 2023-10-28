@@ -15,8 +15,8 @@
         </div>
 
         <div class="flex items-center justify-end mt-4">
-            <x-primary-button class="ml-4 px-6" title="{{ __('送信') }}" :disabled="blank($content)">
-                {{ __('送信') }}
+            <x-primary-button class="ml-4 px-6" title="{{ __('更新') }}" :disabled="blank($content)">
+                {{ __('更新') }}
             </x-primary-button>
         </div>
 
@@ -27,4 +27,17 @@
             </div>
         @endif
     </form>
+
+    @can('admin')
+        <div class="flex justify-end mt-6">
+            <details>
+                <summary class="text-gray-400 text-xs"></summary>
+                <x-danger-button
+                    wire:click="delete"
+                    wire:confirm="削除しますか？"
+                >削除
+                </x-danger-button>
+            </details>
+        </div>
+    @endcan
 </div>

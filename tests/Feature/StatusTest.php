@@ -144,4 +144,38 @@ class StatusTest extends TestCase
             'content' => 'test',
         ]);
     }
+
+    public function test_edit_delete_admin(): void
+    {
+        $status = Status::factory(1)
+            ->forUser(['id' => 1])
+            ->create()
+            ->first();
+
+        $this->actingAs($status->user);
+
+        Livewire::test(StatusEdit::class, ['status' => $status])
+            ->call('delete')
+            ->assertRedirect();
+
+        $this->assertDatabaseMissing('statuses', [
+            'id' => $status->id,
+        ]);
+    }
+
+    public function test_edit_delete_guest(): void
+    {
+        $status = Status::factory(1)
+            ->forUser(['id' => 1])
+            ->create()
+            ->first();
+
+        Livewire::test(StatusEdit::class, ['status' => $status])
+            ->call('delete')
+            ->assertForbidden();
+
+        $this->assertDatabaseHas('statuses', [
+            'id' => $status->id,
+        ]);
+    }
 }
