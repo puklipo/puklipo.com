@@ -11,7 +11,7 @@
             <li>Laravel公式がサポートしているバージョンの質問のみ受け付けています。</li>
             <li>投稿者による質問の編集・削除はできません。</li>
             <li>Laravelと関係ないことは削除対象です。</li>
-            <li><a href="https://chat.openai.com/g/g-HZyGrPedw-laravel-guide"　target="_blank">Laravel Guide
+            <li><a href="https://chat.openai.com/g/g-HZyGrPedw-laravel-guide" target="_blank">Laravel Guide
  GPTs</a>もあります。</li>
         </ul>
     </div>
