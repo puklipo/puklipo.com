@@ -42,12 +42,12 @@ class Discussion extends Model
         return $this->hasMany(Answer::class);
     }
 
-    public function scopeWithoutPrivate(Builder $query): void
+    public function scopeOnlyPublic(Builder $query): void
     {
         $query->where('private', false);
     }
 
-    public function scopeWithPrivate(Builder $query): void
+    public function scopeOnlyPrivate(Builder $query): void
     {
         $query->where('private', true);
     }

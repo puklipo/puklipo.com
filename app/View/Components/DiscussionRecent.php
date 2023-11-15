@@ -17,7 +17,7 @@ class DiscussionRecent extends Component
      */
     public function __construct()
     {
-        $this->discussions = Discussion::withoutPrivate()
+        $this->discussions = Discussion::onlyPublic()
             ->withCount('answers')
             ->latest()
             ->take(30)

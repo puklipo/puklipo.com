@@ -17,7 +17,7 @@ class DiscussionPrivate extends Component
     #[Computed]
     public function discussions(): Paginator
     {
-        return Discussion::withPrivate()
+        return Discussion::onlyPrivate()
             ->withCount('answers')
             ->latest()
             ->simplePaginate();

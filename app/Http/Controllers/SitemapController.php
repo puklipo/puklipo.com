@@ -25,7 +25,7 @@ class SitemapController extends Controller
                 ->setLastModificationDate($status->updated_at)
         ));
 
-        Discussion::withoutPrivate()->latest()->lazy()->each(fn (Discussion $discussion) => $sitemap->add(
+        Discussion::onlyPublic()->latest()->lazy()->each(fn (Discussion $discussion) => $sitemap->add(
             Url::create(route('discussion.show', $discussion))
                 ->setLastModificationDate($discussion->updated_at)
         ));

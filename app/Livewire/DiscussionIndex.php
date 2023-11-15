@@ -17,7 +17,7 @@ class DiscussionIndex extends Component
     #[Computed]
     public function discussions(): Paginator
     {
-        return Discussion::withoutPrivate()
+        return Discussion::onlyPublic()
             ->withCount('answers')
             ->latest()
             ->simplePaginate();
