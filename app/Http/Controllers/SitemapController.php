@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Discussion;
 use App\Models\Status;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -17,11 +18,16 @@ class SitemapController extends Controller
     {
         $sitemap = Sitemap::create()
             ->add(Url::create('/')->setPriority(1.0))
-            ->add(Url::create(route('discussion'))->setPriority(0.9));
+            ->add(Url::create(route('discussion'))->setPriority(1.0));
 
         Status::latest()->lazy()->each(fn (Status $status) => $sitemap->add(
             Url::create(route('status.show', $status))
                 ->setLastModificationDate($status->updated_at)
+        ));
+
+        Discussion::latest()->lazy()->each(fn (Discussion $discussion) => $sitemap->add(
+            Url::create(route('discussion.show', $discussion))
+                ->setLastModificationDate($discussion->updated_at)
         ));
 
         return $sitemap->render();
