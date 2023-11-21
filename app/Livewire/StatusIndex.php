@@ -14,14 +14,9 @@ class StatusIndex extends Component
 {
     use WithPagination;
 
-    protected bool $scroll = true;
-
     #[On('statusCreated')]
-    public function statusCreated(bool $scroll = false): void
+    public function statusCreated(): void
     {
-        //新規投稿後は自動スクロールしない。
-        $this->scroll = $scroll;
-
         $this->resetPage();
     }
 
@@ -35,15 +30,5 @@ class StatusIndex extends Component
                     ->toArray())))
             ->latest()
             ->simplePaginate();
-    }
-
-    public function updatedPage($page): void
-    {
-        if (! $this->scroll) {
-            return;
-        }
-
-        //ブラウザ側へイベント発行。ページが変わった時に一番上にスクロール。
-        $this->dispatch('page-updated', page: $page);
     }
 }

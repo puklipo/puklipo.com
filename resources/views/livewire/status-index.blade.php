@@ -3,7 +3,7 @@
         <livewire:status-form></livewire:status-form>
     @endcan
 
-    <div x-data @page-updated.window="$el.scrollIntoView({behavior: 'smooth'})">
+    <div>
         <livewire:status-filter></livewire:status-filter>
 
         @foreach($this->statuses as $status)
