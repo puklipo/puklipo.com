@@ -23,11 +23,6 @@ class DiscussionMy extends Component
             ->simplePaginate();
     }
 
-    public function updatedPage($page): void
-    {
-        $this->dispatch('page-updated');
-    }
-
     #[Layout('components.layouts.discussions')]
     #[Title('Laravel専用相談所')]
     public function render()
