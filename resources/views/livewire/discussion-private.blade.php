@@ -9,7 +9,7 @@
         @endforelse
 
         <p>
-            {{ $this->discussions->links(data: ['scrollTo' => '#discussion') }}
+            {{ $this->discussions->links(data: ['scrollTo' => '#discussion']) }}
         </p>
     </div>
 </div>
