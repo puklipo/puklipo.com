@@ -8,11 +8,11 @@ class IndexNow
 {
     public static function submit(string $url): void
     {
-        info('IndexNow: '.$url);
-
         if (! app()->isProduction()) {
             return;
         }
+
+        info('IndexNow: '.$url);
 
         $response = Http::get(config('indexnow.search_engine'), [
             'url' => $url,
