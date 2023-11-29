@@ -15,7 +15,7 @@ class DiscussionCreate extends Component
 
     #[Rule('required|string')]
     /**
-     * @var string $version デフォルトバージョン
+     * @var string デフォルトバージョン
      */
     public string $version = '10.x';
 
