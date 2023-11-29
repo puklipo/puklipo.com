@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Support\IndexNow;
 use App\Support\Markdown;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
@@ -10,6 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Spatie\Feed\Feedable;
 use Spatie\Feed\FeedItem;
+use function Illuminate\Events\queueable;
 
 /**
  * @mixin IdeHelperStatus
@@ -25,6 +27,17 @@ class Status extends Model implements Feedable
         'nostr_id',
         'created_at',
     ];
+
+    protected static function booted(): void
+    {
+        static::created(queueable(function (Status $status) {
+            IndexNow::submit(route('status.show', $status));
+        }));
+
+        static::updated(queueable(function (Status $status) {
+            IndexNow::submit(route('status.show', $status));
+        }));
+    }
 
     public function user(): BelongsTo
     {
