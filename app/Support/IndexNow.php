@@ -8,6 +8,8 @@ class IndexNow
 {
     public static function submit(string $url): void
     {
+        info('IndexNow: '.$url);
+
         if (! app()->isProduction()) {
             return;
         }
