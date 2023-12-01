@@ -5,7 +5,7 @@ namespace App\Livewire;
 use App\Models\Status;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Livewire\Attributes\Rule;
+use Livewire\Attributes\Validate;
 use Livewire\Component;
 
 class StatusEdit extends Component
@@ -14,12 +14,16 @@ class StatusEdit extends Component
 
     public Status $status;
 
-    #[Rule('required|string')]
+    #[Validate('required|string')]
     public string $content;
+
+    #[Validate('nullable|string')]
+    public string $title = '';
 
     public function mount(Status $status): void
     {
         $this->content = $status->content;
+        $this->title = $status->title;
     }
 
     /**
@@ -33,6 +37,7 @@ class StatusEdit extends Component
 
         $this->status->fill([
             'content' => trim($this->content),
+            'title' => trim($this->title),
         ])->save();
 
         $this->redirect(route('status.show', $this->status), navigate: true);

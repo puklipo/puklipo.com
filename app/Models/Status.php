@@ -24,6 +24,7 @@ class Status extends Model implements Feedable
 
     protected $fillable = [
         'content',
+        'title',
         'twitter',
         'nostr_id',
         'created_at',
@@ -49,7 +50,7 @@ class Status extends Model implements Feedable
     {
         return FeedItem::create([
             'id' => $this->id,
-            'title' => $this->created_at,
+            'title' => $this->title ?? $this->created_at,
             'summary' => Markdown::parse($this->content),
             'updated' => $this->updated_at,
             'link' => route('status.show', $this),

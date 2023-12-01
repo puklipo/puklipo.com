@@ -15,6 +15,10 @@
     </div>
 
     <div class="break-all px-3">
+        @if(filled($status->title))
+            <h3>{{ $status->title }}</h3>
+        @endif
+
         <div>{{ \App\Support\Markdown::parse($status->content) }}</div>
 
         @if($status->user->id === config('puklipo.users.tips'))

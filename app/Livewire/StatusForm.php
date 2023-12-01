@@ -5,15 +5,18 @@ namespace App\Livewire;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
-use Livewire\Attributes\Rule;
+use Livewire\Attributes\Validate;
 use Livewire\Component;
 
 class StatusForm extends Component
 {
     use AuthorizesRequests;
 
-    #[Rule('required|string')]
+    #[Validate('required|string')]
     public string $content = '';
+
+    #[Validate('nullable|string')]
+    public string $title = '';
 
     /**
      * @throws AuthorizationException
@@ -26,9 +29,10 @@ class StatusForm extends Component
 
         $request->user()->statuses()->create([
             'content' => trim($this->content),
+            'title' => trim($this->title),
         ]);
 
-        $this->reset('content');
+        $this->reset('content', 'title');
 
         $this->dispatch('statusCreated');
     }
