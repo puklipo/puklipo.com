@@ -38,7 +38,7 @@ class Discussion extends Model
     protected static function booted(): void
     {
         static::created(queueable(function (Discussion $discussion) {
-            IndexNow::submit(route('discussion.show', $discussion));
+            info('IndexNow: '.IndexNow::submit(route('discussion.show', $discussion)));
         }));
     }
 
