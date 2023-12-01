@@ -16,7 +16,7 @@ class StatusForm extends Component
     public string $content = '';
 
     #[Validate('nullable|string')]
-    public string $title = '';
+    public ?string $title = '';
 
     /**
      * @throws AuthorizationException

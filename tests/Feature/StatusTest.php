@@ -24,12 +24,14 @@ class StatusTest extends TestCase
 
         Livewire::test(StatusForm::class)
             ->set('content', 'test')
+            ->set('title', 'test')
             ->call('create')
             ->assertSet('content', '')
             ->assertDispatched('statusCreated');
 
         $this->assertDatabaseHas('statuses', [
             'content' => 'test',
+            'title' => 'test',
             'user_id' => 1,
         ]);
     }

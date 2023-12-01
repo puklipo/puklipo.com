@@ -18,7 +18,7 @@ class StatusEdit extends Component
     public string $content;
 
     #[Validate('nullable|string')]
-    public string $title = '';
+    public ?string $title = '';
 
     public function mount(Status $status): void
     {
