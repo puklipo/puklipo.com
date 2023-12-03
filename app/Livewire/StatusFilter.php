@@ -13,7 +13,7 @@ use Livewire\Component;
 class StatusFilter extends Component
 {
     #[Locked]
-    protected array $default_filter = [1];
+    protected array $default_filter = [1, 2];
 
     #[Locked]
     public array $filter;
