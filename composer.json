@@ -11,7 +11,7 @@
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
         "laravel/vapor-cli": "^1.55",
-        "laravel/vapor-core": "^2.29",
+        "laravel/vapor-core": "^2.33",
         "laravel/vapor-ui": "^1.7",
         "livewire/livewire": "^3.0",
         "puklipo/laravel-vapor-gzip": "^1.1",
