@@ -50,7 +50,7 @@ class Status extends Model implements Feedable
     {
         return FeedItem::create([
             'id' => $this->id,
-            'title' => $this->title ?? $this->created_at,
+            'title' => empty($this->title) ? $this->created_at : $this->title,
             'summary' => Markdown::parse($this->content),
             'updated' => $this->updated_at,
             'link' => route('status.show', $this),
