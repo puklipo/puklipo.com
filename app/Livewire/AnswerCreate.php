@@ -4,14 +4,14 @@ namespace App\Livewire;
 
 use App\Models\Discussion;
 use Illuminate\Http\Request;
-use Livewire\Attributes\Rule;
+use Livewire\Attributes\Validate;
 use Livewire\Component;
 
 class AnswerCreate extends Component
 {
     public Discussion $discussion;
 
-    #[Rule('required|string')]
+    #[Validate('required|string')]
     public string $content = '';
 
     public function mount(Discussion $discussion): void
