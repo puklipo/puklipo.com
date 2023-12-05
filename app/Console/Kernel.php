@@ -16,6 +16,8 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')->hourly();
 
         $schedule->command(NostrBotCommand::class)->hourlyAt(30);
+
+        $schedule->command('sitemap')->dailyAt('14:00');
     }
 
     /**
