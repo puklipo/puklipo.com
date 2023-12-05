@@ -6,14 +6,14 @@ use App\Models\Discussion;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
 use Livewire\Attributes\Locked;
-use Livewire\Attributes\Rule;
+use Livewire\Attributes\Validate;
 use Livewire\Component;
 
 class DiscussionCreate extends Component
 {
     use AuthorizesRequests;
 
-    #[Rule('required|string')]
+    #[Validate('required|string')]
     /**
      * @var string デフォルトバージョン
      */
@@ -26,13 +26,13 @@ class DiscussionCreate extends Component
         '9.x',
     ];
 
-    #[Rule('required|string|max:255')]
+    #[Validate('required|string|max:255')]
     public string $title = '';
 
-    #[Rule('required|string')]
+    #[Validate('required|string')]
     public string $content = '';
 
-    #[Rule('required|boolean')]
+    #[Validate('required|boolean')]
     public bool $private = false;
 
     public function create(Request $request)
