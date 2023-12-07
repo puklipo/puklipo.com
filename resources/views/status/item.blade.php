@@ -16,7 +16,7 @@
 
     <div class="break-all px-3">
         @if(filled($status->title))
-            <h3>{{ $status->title }}</h3>
+            <h2>{{ $status->title }}</h2>
         @endif
 
         <div>{{ \App\Support\Markdown::parse($status->content) }}</div>
