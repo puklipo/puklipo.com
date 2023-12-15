@@ -10,6 +10,8 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 use Livewire\WithPagination;
 
+#[Layout('components.layouts.discussions')]
+#[Title('Laravel専用相談所')]
 class DiscussionPrivate extends Component
 {
     use WithPagination;
@@ -21,12 +23,5 @@ class DiscussionPrivate extends Component
             ->withCount('answers')
             ->latest()
             ->simplePaginate();
-    }
-
-    #[Layout('components.layouts.discussions')]
-    #[Title('Laravel専用相談所')]
-    public function render()
-    {
-        return view('livewire.discussion-private');
     }
 }

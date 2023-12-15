@@ -30,9 +30,4 @@ class AnswerCreate extends Component
 
         return to_route('discussion.show', $this->discussion);
     }
-
-    public function render()
-    {
-        return view('livewire.answer-create');
-    }
 }

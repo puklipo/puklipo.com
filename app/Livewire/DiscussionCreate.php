@@ -50,9 +50,4 @@ class DiscussionCreate extends Component
 
         return to_route('discussion.show', $discussion);
     }
-
-    public function render()
-    {
-        return view('livewire.discussion-create');
-    }
 }
