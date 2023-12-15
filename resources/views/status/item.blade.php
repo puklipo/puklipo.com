@@ -8,7 +8,7 @@
         </div>
         <time title="{{ $status->created_at }}">
             <a href="{{ route('status.show', $status) }}"
-               class="no-underline text-gray-500">
+               class="no-underline text-gray-500" wire:navigate>
                 {{ $status->created_at->diffForHumans() }}
             </a>
         </time>

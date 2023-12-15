@@ -3,7 +3,7 @@
     <ul>
         @foreach($discussions as $discussion)
             <li>
-                <a href="{{ route('discussion.show', $discussion) }}" class="no-underline hover:underline"> {{ $discussion->title }} [{{ $discussion->answers_count }}]</a>
+                <a href="{{ route('discussion.show', $discussion) }}" class="no-underline hover:underline" wire:navigate> {{ $discussion->title }} [{{ $discussion->answers_count }}]</a>
             </li>
         @endforeach
     </ul>

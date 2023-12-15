@@ -1,5 +1,5 @@
 <header class="p-6 bg-white dark:bg-gray-800">
-    <h1><a href="{{ route('home') }}" class="no-underline">{{ config('app.name') }}</a></h1>
+    <h1><a href="{{ route('home') }}" class="no-underline" wire:navigate>{{ config('app.name') }}</a></h1>
 
     <div></div>
 

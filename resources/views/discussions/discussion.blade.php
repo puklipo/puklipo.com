@@ -5,7 +5,7 @@
         @endif
         <span class="font-normal">[{{ $discussion->version }}]</span>
         <a href="{{ route('discussion.show', $discussion) }}"
-           class="no-underline hover:underline">{{ $discussion->title }}</a>
+           class="no-underline hover:underline" wire:navigate>{{ $discussion->title }}</a>
     </h2>
     <div>
         <span class="font-bold">{{ $discussion->user->name ?? '匿名' }}</span>
