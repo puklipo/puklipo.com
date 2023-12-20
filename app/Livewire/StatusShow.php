@@ -18,7 +18,7 @@ class StatusShow extends Component
             $title = str($this->status->content)->replace(PHP_EOL, ' ')->truncate(50)->value();
         }
 
-        $description = str($this->status->content)->replace(PHP_EOL, ' ')->truncate(200)->value();
+        $description = str($this->status->content)->replace(PHP_EOL, ' ')->truncate(150)->value();
 
         return view('livewire.status-show')
             ->layoutData(compact('description'))
