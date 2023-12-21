@@ -14,7 +14,7 @@
         </time>
     </div>
 
-    <div class="break-auto px-3">
+    <div class="break-all break-auto text-balance px-3">
         @if(filled($status->title))
             <h2>{{ $status->title }}</h2>
         @endif

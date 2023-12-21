@@ -1,4 +1,4 @@
-<div class="mx-3 px-3 break-auto">
+<div class="mx-3 px-3 break-all break-auto text-balance">
     <div>
         <h2 class="border-b-2 border-indigo-500">質問</h2>
         <h3 class="text-2xl">
