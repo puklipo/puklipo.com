@@ -8,7 +8,6 @@ use App\Support\JsonLd\QAPage;
 use App\Support\JsonLd\Question;
 use Closure;
 use Illuminate\Contracts\View\View;
-use Illuminate\Support\Collection;
 use Illuminate\View\Component;
 use JsonLd\Context;
 use JsonLd\ContextTypes\Person;
