@@ -36,7 +36,7 @@
         <h2 class="border-b-2 border-indigo-500">回答</h2>
         <div class="m-3 sm:m-6">
             @forelse($discussion->answers as $answer)
-                <div class="border-b" wire:key="{{ $answer->id }}">
+                <div class="border-b" wire:key="{{ $answer->id }}" id="{{ $answer->id }}">
                     <div>{{ \App\Support\Markdown::escape($answer->content) }}</div>
                     <div>
                         <span class="font-bold inline-flex items-center">{{ $answer->user->name ?? '匿名' }}
@@ -68,4 +68,8 @@
     </div>
 
     <livewire:answer-create :discussion="$discussion"/>
+
+    <x-json-ld.discussion :$discussion/>
 </div>
+
+
