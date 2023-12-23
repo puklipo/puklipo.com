@@ -30,6 +30,10 @@ class Discussion extends Component
     {
         $this->discussion->loadCount('answers');
 
+        if ($this->discussion->answers_count === 0) {
+            return '';
+        }
+
         $answers = $this->discussion->answers->map(fn (Answer $answer) => Context::create(AnswerJson::class, [
             'text' => $answer->content,
             'author' => Context::create(Person::class, [
@@ -40,18 +44,17 @@ class Discussion extends Component
         ])->getProperties()
         )->toArray();
 
-        $question = Context::create(Question::class, collect([
+        $question = Context::create(Question::class, [
             'name' => $this->discussion->title,
             'text' => $this->discussion->content,
             'author' => Context::create(Person::class, [
                 'name' => $this->discussion->user->name ?? '匿名',
             ]),
+            'suggestedAnswer' => $answers,
             'datePublished' => $this->discussion->created_at->toISOString(),
             'answerCount' => $this->discussion->answers_count,
             'url' => route('discussion.show', $this->discussion),
-        ])->when(filled($answers), function (Collection $collection) use ($answers) {
-            $collection->put('suggestedAnswer', $answers);
-        })->toArray());
+        ]);
 
         $context = Context::create(QAPage::class, [
             'mainEntity' => $question,
