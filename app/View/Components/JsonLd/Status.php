@@ -25,9 +25,10 @@ class Status extends Component
     public function render(): View|Closure|string
     {
         $context = Context::create(Article::class, [
-            'author' => Context::create(Person::class, [
+            'author' => [
+                '@type' => 'Person',
                 'name' => $this->status->user->name,
-            ]),
+            ],
             'headline' => $this->status->headline,
             'datePublished' => $this->status->created_at->toISOString(),
             'dateModified' => $this->status->updated_at->toISOString(),
