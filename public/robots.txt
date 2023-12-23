@@ -1,4 +1,8 @@
 User-agent: *
 Disallow:
 
+Disallow: /register
+Disallow: /login
+Disallow: /feed
+
 Sitemap: https://puklipo.com/sitemap
