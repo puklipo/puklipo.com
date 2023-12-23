@@ -18,6 +18,7 @@ class Question extends AbstractContext
         'author' => Person::class,
         'answerCount' => null,
         'suggestedAnswer' => Answer::class,
+        'datePublished' => null,
         'url' => null,
     ];
 
