@@ -11,6 +11,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Collection;
 use Illuminate\View\Component;
 use JsonLd\Context;
+use JsonLd\ContextTypes\Person;
 
 class Discussion extends Component
 {
@@ -31,10 +32,10 @@ class Discussion extends Component
 
         $answers = $this->discussion->answers->map(fn (Answer $answer) => Context::create(AnswerJson::class, [
             'text' => $answer->content,
-            'author' => [
+            'author' => Context::create(Person::class, [
                 'name' => $answer->user->name ?? '匿名',
-            ],
-            'datePublished' => $answer->created_at,
+            ]),
+            'datePublished' => $answer->created_at->toISOString(),
             'url' => route('discussion.show', $this->discussion).'#'.$answer->id,
         ])->getProperties()
         )->toArray();
@@ -42,10 +43,10 @@ class Discussion extends Component
         $question = Context::create(Question::class, collect([
             'name' => $this->discussion->title,
             'text' => $this->discussion->content,
-            'author' => [
+            'author' => Context::create(Person::class, [
                 'name' => $this->discussion->user->name ?? '匿名',
-            ],
-            'datePublished' => $this->discussion->created_at,
+            ]),
+            'datePublished' => $this->discussion->created_at->toISOString(),
             'answerCount' => $this->discussion->answers_count,
             'url' => route('discussion.show', $this->discussion),
         ])->when(filled($answers), function (Collection $collection) use ($answers) {

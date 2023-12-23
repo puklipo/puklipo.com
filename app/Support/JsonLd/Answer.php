@@ -3,6 +3,7 @@
 namespace App\Support\JsonLd;
 
 use JsonLd\ContextTypes\AbstractContext;
+use JsonLd\ContextTypes\Person;
 
 class Answer extends AbstractContext
 {
@@ -13,7 +14,7 @@ class Answer extends AbstractContext
      */
     protected $structure = [
         'text' => null,
-        'author' => null,
+        'author' => Person::class,
         'datePublished' => null,
         'url' => null,
     ];

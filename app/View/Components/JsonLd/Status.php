@@ -7,6 +7,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 use JsonLd\Context;
 use JsonLd\ContextTypes\Article;
+use JsonLd\ContextTypes\Person;
 
 class Status extends Component
 {
@@ -24,9 +25,9 @@ class Status extends Component
     public function render(): View|Closure|string
     {
         $context = Context::create(Article::class, [
-            'author' => [
+            'author' => Context::create(Person::class, [
                 'name' => $this->status->user->name,
-            ],
+            ]),
             'headline' => $this->status->headline,
             'datePublished' => $this->status->created_at->toISOString(),
             'dateModified' => $this->status->updated_at->toISOString(),
