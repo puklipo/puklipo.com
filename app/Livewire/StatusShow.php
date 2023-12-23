@@ -12,11 +12,7 @@ class StatusShow extends Component
 
     public function render(): View
     {
-        if (filled($this->status->title)) {
-            $title = $this->status->title;
-        } else {
-            $title = str($this->status->content)->replace(PHP_EOL, ' ')->truncate(50)->value();
-        }
+        $title = $this->status->headline;
 
         $description = str($this->status->content)->replace(PHP_EOL, ' ')->truncate(150)->value();
 

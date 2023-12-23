@@ -34,4 +34,7 @@
             </a>
         </div>
     @endcan
+
+    <x-json-ld.status :$status />
 </div>
+

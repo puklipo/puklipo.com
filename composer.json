@@ -18,7 +18,8 @@
         "revolution/laravel-nostr": "^0.1.4",
         "revolution/laravel-str-mixins": "^2.4",
         "spatie/laravel-feed": "^4.2",
-        "spatie/laravel-sitemap": "^6.2"
+        "spatie/laravel-sitemap": "^6.2",
+        "torann/json-ld": "^0.0.19"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.13",

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Casts\Headline;
 use App\Support\IndexNow;
 use App\Support\Markdown;
 use Illuminate\Database\Eloquent\Collection;
@@ -28,6 +29,10 @@ class Status extends Model implements Feedable
         'twitter',
         'nostr_id',
         'created_at',
+    ];
+
+    protected $casts = [
+        'headline' => Headline::class,
     ];
 
     protected static function booted(): void
