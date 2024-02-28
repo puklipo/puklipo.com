@@ -12,7 +12,6 @@
         "laravel/tinker": "^2.8",
         "laravel/vapor-cli": "^1.55",
         "laravel/vapor-core": "^2.33",
-        "laravel/vapor-ui": "^1.7",
         "livewire/livewire": "^3.0",
         "puklipo/laravel-vapor-gzip": "^1.1",
         "revolution/laravel-nostr": "^0.1.4",
@@ -52,7 +51,6 @@
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
-            "@php artisan vapor-ui:publish --ansi",
             "@php artisan ide-helper:generate",
             "@php artisan ide-helper:meta"
         ],
