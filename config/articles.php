@@ -2,10 +2,12 @@
 
 return [
     [
-        'title' => 'Livewireの普通の使い方とVoltの比較
-',
-        'url' => 'https://github.com/pop-culture-studio/articles/blob/main/livewire-volt.md
-',
+        'title' => 'Laravel11以降の新常識',
+        'url' => 'https://zenn.dev/pcs_engineer/articles/laravel11-new-structure',
+    ],
+    [
+        'title' => 'Livewireの普通の使い方とVoltの比較',
+        'url' => 'https://github.com/pop-culture-studio/articles/blob/main/livewire-volt.md',
     ],
     [
         'title' => 'Laravel Collectiveが終了する',
