@@ -2,6 +2,10 @@
 
 return [
     [
+        'title' => 'Laravel11以降から使い始めた人に必要そうな質問と回答一覧',
+        'url' => 'https://zenn.dev/pcs_engineer/articles/laravel11-faq',
+    ],
+    [
         'title' => 'Laravel11以降の新常識',
         'url' => 'https://zenn.dev/pcs_engineer/articles/laravel11-new-structure',
     ],
