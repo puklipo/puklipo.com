@@ -2,6 +2,10 @@
 
 return [
     [
+        'title' => 'Laravel11へのアップグレード（スリム化版）',
+        'url' => 'https://zenn.dev/pcs_engineer/articles/laravel11-upgrade-slim',
+    ],
+    [
         'title' => 'Laravel11以降から使い始めた人に必要そうな質問と回答一覧',
         'url' => 'https://zenn.dev/pcs_engineer/articles/laravel11-faq',
     ],
