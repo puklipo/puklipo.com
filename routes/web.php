@@ -45,3 +45,5 @@ Route::get('sitemap', SitemapController::class)->name('sitemap');
 Route::feeds();
 
 require __DIR__.'/auth.php';
+
+require __DIR__.'/health.php';
