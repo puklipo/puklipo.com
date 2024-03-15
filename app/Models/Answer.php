@@ -26,7 +26,7 @@ class Answer extends Model
     protected static function booted(): void
     {
         static::created(queueable(function (Answer $answer) {
-            info('IndexNow: '.IndexNow::submit(route('discussion.show', $answer->discussion)));
+            IndexNow::submit(route('discussion.show', $answer->discussion));
         }));
     }
 
