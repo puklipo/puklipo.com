@@ -37,7 +37,7 @@ class NostrBotCommand extends Command
 
         $user = User::findOrFail(config('puklipo.users.tips'));
 
-        collect($notes)
+        collect($notes)->dump()
             ->each(fn ($note) => $user->statuses()->updateOrCreate([
                 'nostr_id' => $note['id'],
             ], [
