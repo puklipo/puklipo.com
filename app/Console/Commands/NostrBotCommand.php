@@ -27,7 +27,7 @@ class NostrBotCommand extends Command
      */
     public function handle(): void
     {
-        $this->info(cache('nostr_since');
+        $this->info(cache('nostr_since'));
 
         $notes = Social::notes(
             authors: [config('nostr.keys.bot_pk')],
