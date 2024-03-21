@@ -17,13 +17,12 @@ class DiscussionCreate extends Component
     /**
      * @var string デフォルトバージョン
      */
-    public string $version = '10.x';
+    public string $version = '11.x';
 
     #[Locked]
     public array $versions = [
         '11.x',
         '10.x',
-        '9.x',
     ];
 
     #[Validate('required|string|max:255')]
