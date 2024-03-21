@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.301.3",
+            "version": "3.301.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "6b21e34d24a73ea66492869be90443069034fdb3"
+                "reference": "1d04b11a621eaceb389d2cfbd82bcdc423903796"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6b21e34d24a73ea66492869be90443069034fdb3",
-                "reference": "6b21e34d24a73ea66492869be90443069034fdb3",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1d04b11a621eaceb389d2cfbd82bcdc423903796",
+                "reference": "1d04b11a621eaceb389d2cfbd82bcdc423903796",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.301.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.301.4"
             },
-            "time": "2024-03-19T18:05:04+00:00"
+            "time": "2024-03-20T18:16:55+00:00"
         },
         {
             "name": "brick/math",
@@ -3919,16 +3919,16 @@
         },
         {
             "name": "revolution/laravel-nostr",
-            "version": "0.3.0",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-nostr.git",
-                "reference": "592b373ba7cf0f4d4a76578d55ee64b3d94cae89"
+                "reference": "4404165f973e4b152017bfbd374f48917591570f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-nostr/zipball/592b373ba7cf0f4d4a76578d55ee64b3d94cae89",
-                "reference": "592b373ba7cf0f4d4a76578d55ee64b3d94cae89",
+                "url": "https://api.github.com/repos/kawax/laravel-nostr/zipball/4404165f973e4b152017bfbd374f48917591570f",
+                "reference": "4404165f973e4b152017bfbd374f48917591570f",
                 "shasum": ""
             },
             "require": {
@@ -3937,7 +3937,7 @@
                 "php": "^8.1"
             },
             "require-dev": {
-                "orchestra/testbench": "^8.0",
+                "orchestra/testbench": "^8.0||^9.0",
                 "phpunit/phpunit": "^10.5",
                 "textalk/websocket": "^1.6"
             },
@@ -3971,9 +3971,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-nostr/issues",
-                "source": "https://github.com/kawax/laravel-nostr/tree/0.3.0"
+                "source": "https://github.com/kawax/laravel-nostr/tree/0.3.1"
             },
-            "time": "2024-02-20T04:50:45+00:00"
+            "time": "2024-03-20T04:15:23+00:00"
         },
         {
             "name": "revolution/laravel-str-mixins",
@@ -4318,16 +4318,16 @@
         },
         {
             "name": "spatie/laravel-package-tools",
-            "version": "1.16.3",
+            "version": "1.16.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "59db18c2e20d49a0b6d447bb1c654f6c123beb9e"
+                "reference": "ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/59db18c2e20d49a0b6d447bb1c654f6c123beb9e",
-                "reference": "59db18c2e20d49a0b6d447bb1c654f6c123beb9e",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53",
+                "reference": "ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53",
                 "shasum": ""
             },
             "require": {
@@ -4366,7 +4366,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.3"
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.4"
             },
             "funding": [
                 {
@@ -4374,7 +4374,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-07T07:35:57+00:00"
+            "time": "2024-03-20T07:29:11+00:00"
         },
         {
             "name": "spatie/laravel-sitemap",
