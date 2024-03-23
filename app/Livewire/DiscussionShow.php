@@ -5,16 +5,16 @@ namespace App\Livewire;
 use App\Models\Answer;
 use App\Models\Discussion;
 use Illuminate\Auth\Access\AuthorizationException;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 
 class DiscussionShow extends Component
 {
-    use AuthorizesRequests;
-
     public Discussion $discussion;
 
+    /**
+     * @throws AuthorizationException
+     */
     public function mount(): void
     {
         $this->authorize('view', $this->discussion);

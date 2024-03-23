@@ -4,14 +4,11 @@ namespace App\Livewire;
 
 use App\Models\Status;
 use Illuminate\Auth\Access\AuthorizationException;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
 class StatusEdit extends Component
 {
-    use AuthorizesRequests;
-
     public Status $status;
 
     #[Validate('required|string')]

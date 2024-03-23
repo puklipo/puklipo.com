@@ -3,7 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Discussion;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
 use Livewire\Attributes\Locked;
 use Livewire\Attributes\Validate;
@@ -11,8 +11,6 @@ use Livewire\Component;
 
 class DiscussionCreate extends Component
 {
-    use AuthorizesRequests;
-
     #[Validate('required|string')]
     /**
      * @var string デフォルトバージョン
@@ -34,6 +32,9 @@ class DiscussionCreate extends Component
     #[Validate('required|boolean')]
     public bool $private = false;
 
+    /**
+     * @throws AuthorizationException
+     */
     public function create(Request $request)
     {
         $this->authorize('create', Discussion::class);
