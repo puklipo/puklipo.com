@@ -26,10 +26,11 @@ class NewToken extends Command
      */
     public function handle(): int
     {
-        $user = User::findOrFail(config('puklipo.users.tips'));
-        $token = $user->createToken('tips');
-
-        $this->info($token->plainTextToken);
+        $this->info(
+            User::findOrFail(config('puklipo.users.tips'))
+                ->createToken('tips')
+                ->plainTextToken
+        );
 
         return 0;
     }
