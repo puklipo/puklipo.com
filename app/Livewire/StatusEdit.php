@@ -37,7 +37,7 @@ class StatusEdit extends Component
             'title' => trim($this->title),
         ])->save();
 
-        $this->redirect(route('status.show', $this->status), navigate: true);
+        $this->redirectRoute('status.show', $this->status, navigate: true);
     }
 
     /**
@@ -50,6 +50,6 @@ class StatusEdit extends Component
         $this->status->delete();
         unset($this->status);
 
-        $this->redirect(route('home'), navigate: true);
+        $this->redirectRoute('home', navigate: true);
     }
 }

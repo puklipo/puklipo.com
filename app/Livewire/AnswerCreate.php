@@ -28,6 +28,6 @@ class AnswerCreate extends Component
             'user_id' => auth()->user()->id ?? null,
         ]);
 
-        return to_route('discussion.show', $this->discussion);
+        $this->redirectRoute('discussion.show', $this->discussion);
     }
 }

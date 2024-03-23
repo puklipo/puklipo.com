@@ -32,7 +32,7 @@ class DiscussionShow extends Component
         $this->discussion->delete();
         unset($this->discussion);
 
-        $this->redirect(route('discussion'));
+        $this->redirectRoute('discussion');
     }
 
     /**
@@ -43,9 +43,10 @@ class DiscussionShow extends Component
         $this->authorize('delete', $this->discussion);
 
         Answer::destroy($id);
+
         $this->discussion->load(['answers', 'answers.user']);
 
-        $this->redirect(route('discussion.show', $this->discussion));
+        $this->redirectRoute('discussion.show', $this->discussion);
     }
 
     #[Layout('components.layouts.discussions')]

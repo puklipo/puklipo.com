@@ -48,6 +48,6 @@ class DiscussionCreate extends Component
             'private' => $this->private,
         ]);
 
-        return to_route('discussion.show', $discussion);
+        $this->redirectRoute('discussion.show', $discussion);
     }
 }
