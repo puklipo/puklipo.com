@@ -14,4 +14,4 @@ Artisan::command('sitemap', function () {
     SitemapJob::dispatch();
 })->dailyAt('14:00');
 
-Schedule::command(NostrBotCommand::class)->hourlyAt(30);
+//Schedule::command(NostrBotCommand::class)->hourlyAt(30);

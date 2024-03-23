@@ -5,4 +5,8 @@ return [
         'admin' => (int) env('ADMIN_ID', 1),
         'tips' => (int) env('TIPS_ID', 2),
     ],
+
+    'api' => [
+        'tips' => env('TIPS_API_TOKEN'),
+    ]
 ];

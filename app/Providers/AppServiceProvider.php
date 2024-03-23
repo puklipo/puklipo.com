@@ -33,5 +33,7 @@ class AppServiceProvider extends ServiceProvider
         ]);
 
         Gate::define('admin', fn (User $user) => $user->id === config('puklipo.users.admin'));
+
+        Gate::define('tips', fn (User $user) => $user->id === config('puklipo.users.tips'));
     }
 }
