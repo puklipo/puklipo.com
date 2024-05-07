@@ -2,6 +2,10 @@
 
 return [
     [
+        'title' => 'Laravel11 フォロー・フォロワーのリレーション',
+        'url' => 'https://github.com/pop-culture-studio/follow-sample',
+    ],
+    [
         'title' => 'Laravel11へのアップグレード（スリム化版）',
         'url' => 'https://zenn.dev/pcs_engineer/articles/laravel11-upgrade-slim',
     ],
