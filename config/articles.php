@@ -2,7 +2,11 @@
 
 return [
     [
-        'title' => 'Laravel11 フォロー・フォロワーのリレーション',
+        'title' => 'Laravel Sanctum APIトークン認証のサンプル',
+        'url' => 'https://github.com/pop-culture-studio/sanctum-api-token-sample',
+    ],
+    [
+        'title' => 'Laravel11 フォロー・フォロワーのリレーションのサンプル',
         'url' => 'https://github.com/pop-culture-studio/follow-sample',
     ],
     [
