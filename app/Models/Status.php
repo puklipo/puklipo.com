@@ -31,9 +31,12 @@ class Status extends Model implements Feedable
         'created_at',
     ];
 
-    protected $casts = [
-        'headline' => Headline::class,
-    ];
+    protected function casts(): array
+    {
+        return [
+            'headline' => Headline::class,
+        ];
+    }
 
     protected static function booted(): void
     {
