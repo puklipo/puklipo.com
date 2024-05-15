@@ -21,8 +21,8 @@ class DiscussionPolicy
     public function view(?User $user, Discussion $discussion): bool
     {
         return $user?->can('admin') ||
-            $discussion->private == false ||
-            $discussion->user->id === $user?->id;
+            $discussion->private === false ||
+            $discussion->user->is($user);
     }
 
     /**
@@ -39,7 +39,7 @@ class DiscussionPolicy
     public function update(User $user, Discussion $discussion): bool
     {
         return $user->can('admin') ||
-            $discussion->user->id === $user->id;
+            $discussion->user->is($user);
     }
 
     /**
