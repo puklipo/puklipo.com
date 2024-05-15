@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use App\Casts\Headline;
 use App\Support\IndexNow;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
