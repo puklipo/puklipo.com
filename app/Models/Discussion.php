@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Casts\Headline;
 use App\Support\IndexNow;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
@@ -27,13 +28,16 @@ class Discussion extends Model
         'private',
     ];
 
-    protected $casts = [
-        'private' => 'boolean',
-    ];
-
     protected $with = [
         'user',
     ];
+
+    protected function casts(): array
+    {
+        return [
+            'private' => 'boolean',
+        ];
+    }
 
     protected static function booted(): void
     {
