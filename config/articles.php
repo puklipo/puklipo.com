@@ -2,6 +2,10 @@
 
 return [
     [
+        'title' => 'Laravel11 ドキュメントに書いてないbootstrap/app.phpの使い方',
+        'url' => 'https://github.com/pop-culture-studio/articles/blob/main/laravel11-application-builder.md',
+    ],
+    [
         'title' => 'Laravel Sanctum APIトークン認証のサンプル',
         'url' => 'https://github.com/pop-culture-studio/sanctum-api-token-sample',
     ],
