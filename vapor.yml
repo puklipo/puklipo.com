@@ -1,5 +1,5 @@
 id: 45668
-name: pcs-status
+name: status
 environments:
     production:
         memory: 1024
