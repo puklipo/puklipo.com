@@ -13,7 +13,7 @@ class DiscussionCreate extends Component
 {
     #[Validate('required|string')]
     /**
-     * @var string $version デフォルトバージョン
+     * デフォルトバージョン
      */
     public string $version = '11.x';
 
