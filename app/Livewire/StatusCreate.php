@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
-class StatusForm extends Component
+class StatusCreate extends Component
 {
     #[Validate('required|string')]
     public string $content = '';

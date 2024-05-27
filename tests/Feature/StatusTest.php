@@ -2,8 +2,8 @@
 
 namespace Tests\Feature;
 
+use App\Livewire\StatusCreate;
 use App\Livewire\StatusEdit;
-use App\Livewire\StatusForm;
 use App\Livewire\StatusIndex;
 use App\Models\Status;
 use App\Models\User;
@@ -22,7 +22,7 @@ class StatusTest extends TestCase
 
         $this->actingAs($user);
 
-        Livewire::test(StatusForm::class)
+        Livewire::test(StatusCreate::class)
             ->set('content', 'test')
             ->set('title', 'test')
             ->call('create')
@@ -38,7 +38,7 @@ class StatusTest extends TestCase
 
     public function test_form_create_guest(): void
     {
-        Livewire::test(StatusForm::class)
+        Livewire::test(StatusCreate::class)
             ->set('content', 'test')
             ->call('create')
             ->assertForbidden()

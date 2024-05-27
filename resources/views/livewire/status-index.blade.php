@@ -1,6 +1,6 @@
 <div>
     @can('admin')
-        <livewire:status-form></livewire:status-form>
+        <livewire:status-create></livewire:status-create>
     @endcan
 
     <div id="status">

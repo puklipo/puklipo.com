@@ -22,7 +22,7 @@ class ExampleTest extends TestCase
         $response = $this->actingAs($user)->get('/');
 
         $response->assertStatus(200)
-            ->assertSeeLivewire('status-form')
+            ->assertSeeLivewire('status-create')
             ->assertSeeLivewire('status-index');
     }
 }
