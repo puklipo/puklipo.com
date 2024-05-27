@@ -19,13 +19,13 @@ class AnswerCreate extends Component
         $this->discussion = $discussion;
     }
 
-    public function create(Request $request)
+    public function create(Request $request): void
     {
         $this->validate();
 
         $this->discussion->answers()->create([
             'content' => trim($this->content),
-            'user_id' => auth()->user()->id ?? null,
+            'user_id' => $request->user()->id ?? null,
         ]);
 
         $this->redirectRoute('discussion.show', $this->discussion);
