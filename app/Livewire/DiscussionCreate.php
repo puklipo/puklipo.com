@@ -13,7 +13,7 @@ class DiscussionCreate extends Component
 {
     #[Validate('required|string')]
     /**
-     * @var string デフォルトバージョン
+     * @var string $version デフォルトバージョン
      */
     public string $version = '11.x';
 
@@ -35,7 +35,7 @@ class DiscussionCreate extends Component
     /**
      * @throws AuthorizationException
      */
-    public function create(Request $request)
+    public function create(Request $request): void
     {
         $this->authorize('create', Discussion::class);
 
