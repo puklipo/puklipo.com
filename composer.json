@@ -29,8 +29,7 @@
         "laravel-lang/common": "^6.1",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^8.1",
-        "phpunit/phpunit": "^10.0",
-        "spatie/laravel-ignition": "^2.0"
+        "phpunit/phpunit": "^10.0"
     },
     "autoload": {
         "psr-4": {
