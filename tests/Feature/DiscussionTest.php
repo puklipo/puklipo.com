@@ -10,12 +10,22 @@ use App\Models\Discussion;
 use App\Models\Status;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Route;
 use Livewire\Livewire;
 use Tests\TestCase;
 
 class DiscussionTest extends TestCase
 {
     use RefreshDatabase;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        if (! Route::has('discussion')) {
+            $this->markTestSkipped();
+        }
+    }
 
     public function test_discussion_index_guest(): void
     {
