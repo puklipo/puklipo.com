@@ -17,7 +17,7 @@ Route::get('status/{status}/edit', StatusEdit::class)
     ->name('status.edit')
     ->whereUlid('status');
 
-require __DIR__.'/discussion.php';
+//require __DIR__.'/discussion.php';
 
 Route::view('/dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
