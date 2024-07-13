@@ -2,9 +2,9 @@
 
 namespace App\Support;
 
-use RuntimeException;
 use Illuminate\Http\Client\Factory;
 use Illuminate\Support\Facades\Http;
+use RuntimeException;
 
 class IndexNow
 {
