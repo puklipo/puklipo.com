@@ -32,7 +32,6 @@ class AppServiceProvider extends ServiceProvider
 
         Relation::morphMap([
             'status' => Status::class,
-            'discussion' => Discussion::class,
         ]);
 
         Gate::define('admin', fn (User $user) => $user->id === config('puklipo.users.admin'));
