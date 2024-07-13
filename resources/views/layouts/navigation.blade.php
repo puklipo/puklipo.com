@@ -15,11 +15,6 @@
                     <x-nav-link :href="route('home')" :active="request()->routeIs('home')" wire:navigate>
                         {{ __('ホーム') }}
                     </x-nav-link>
-                    @if(Route::has('discussion'))
-                    <x-nav-link :href="route('discussion')" :active="request()->routeIs('discussion')" wire:navigate>
-                        {{ __('Laravel専用相談所') }}
-                    </x-nav-link>
-                    @endif
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Dashboard') }}
                     </x-nav-link>
@@ -75,11 +70,6 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            @if(Route::has('discussion'))
-            <x-responsive-nav-link :href="route('discussion')" :active="request()->routeIs('discussion')" wire:navigate>
-                {{ __('Laravel専用相談所') }}
-            </x-responsive-nav-link>
-            @endif
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>

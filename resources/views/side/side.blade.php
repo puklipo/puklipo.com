@@ -1,4 +1,3 @@
-@include('side.discussion')
 @include('side.contact')
 @include('side.menu')
 @include('side.books')

@@ -2,7 +2,6 @@
 
 namespace App\Jobs;
 
-use App\Models\Discussion;
 use App\Models\Status;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
@@ -37,11 +36,6 @@ class SitemapJob implements ShouldQueue
         Status::latest()->lazy()->each(fn (Status $status) => $sitemap->add(
             Url::create(route('status.show', $status))
                 ->setLastModificationDate($status->updated_at)
-        ));
-
-        Discussion::onlyPublic()->latest()->lazy()->each(fn (Discussion $discussion) => $sitemap->add(
-            Url::create(route('discussion.show', $discussion))
-                ->setLastModificationDate($discussion->updated_at)
         ));
 
         $sitemap->writeToDisk(config('filesystems.default'), 'sitemap.xml');
