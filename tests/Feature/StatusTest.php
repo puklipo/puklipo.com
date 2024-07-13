@@ -7,8 +7,10 @@ use App\Livewire\StatusEdit;
 use App\Livewire\StatusIndex;
 use App\Models\Status;
 use App\Models\User;
+use App\Support\IndexNow;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Support\Facades\Http;
 use Livewire\Livewire;
 use Tests\TestCase;
 
@@ -18,6 +20,9 @@ class StatusTest extends TestCase
 
     public function test_form_create_admin(): void
     {
+        IndexNow::fake();
+        Http::preventStrayRequests();
+
         $user = User::factory(1)->create(['id' => 1])->first();
 
         $this->actingAs($user);
@@ -34,6 +39,8 @@ class StatusTest extends TestCase
             'title' => 'test',
             'user_id' => 1,
         ]);
+
+        Http::assertSentCount(0);
     }
 
     public function test_form_create_guest(): void

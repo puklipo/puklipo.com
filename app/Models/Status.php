@@ -40,12 +40,12 @@ class Status extends Model implements Feedable
 
     protected static function booted(): void
     {
-        static::created(queueable(function (Status $status) {
-            IndexNow::submit(route('status.show', $status));
-        }));
+        static::created(function (Status $status) {
+            IndexNow::submit_if(app()->isProduction(), route('status.show', $status));
+        });
 
         static::updated(queueable(function (Status $status) {
-            IndexNow::submit(route('status.show', $status));
+            IndexNow::submit_if(app()->isProduction(), route('status.show', $status));
         }));
     }
 
