@@ -2,15 +2,19 @@
 
 namespace App\Support;
 
+use RuntimeException;
 use Illuminate\Http\Client\Factory;
 use Illuminate\Support\Facades\Http;
 
 class IndexNow
 {
+    /**
+     * @throws RuntimeException
+     */
     public static function submit(string $url): int
     {
         if (blank($key = config('indexnow.key'))) {
-            return 0;
+            throw new RuntimeException('Missing index now key.');
         }
 
         return Http::get(config('indexnow.search_engine'), [
