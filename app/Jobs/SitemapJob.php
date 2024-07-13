@@ -30,8 +30,7 @@ class SitemapJob implements ShouldQueue
     public function handle(): void
     {
         $sitemap = Sitemap::create()
-            ->add(Url::create('/'))
-            ->add(Url::create(route('discussion')));
+            ->add(Url::create('/'));
 
         Status::latest()->lazy()->each(fn (Status $status) => $sitemap->add(
             Url::create(route('status.show', $status))
