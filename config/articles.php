@@ -2,6 +2,10 @@
 
 return [
     [
+        'title' => 'Laravel Reverbのサンプルプロジェクト',
+        'url' => 'https://github.com/pop-culture-studio/laravel-reverb-sample',
+    ],
+    [
         'title' => 'Laravel11 ドキュメントに書いてないbootstrap/app.phpの使い方',
         'url' => 'https://github.com/pop-culture-studio/articles/blob/main/laravel11-application-builder.md',
     ],
