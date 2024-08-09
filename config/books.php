@@ -2,6 +2,10 @@
 
 return [
     [
+        'title' => 'Laravel再入門 Vol.5 いろいろなサンプルプロジェクトの解説詰め合わせ',
+        'url' => 'https://zenn.dev/pcs_engineer/books/re-laravel-5',
+    ],
+    [
         'title' => 'Laravel再入門 Vol.4 一人用Twitterもどきを作る',
         'url' => 'https://zenn.dev/pcs_engineer/books/re-laravel-4',
     ],
