@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use App\Models\Discussion;
 use App\Models\Status;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
