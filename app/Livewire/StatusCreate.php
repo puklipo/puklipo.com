@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
+use Livewire\Attributes\On;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
@@ -14,6 +15,12 @@ class StatusCreate extends Component
 
     #[Validate('nullable|string')]
     public ?string $title = '';
+
+    #[On('contentTranslated')]
+    public function contentTranslated(string $content): void
+    {
+        $this->content = $content;
+    }
 
     /**
      * @throws AuthorizationException
