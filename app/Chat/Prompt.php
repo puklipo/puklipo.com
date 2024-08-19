@@ -10,8 +10,8 @@ use Illuminate\Contracts\Support\Arrayable;
 class Prompt implements Arrayable
 {
     protected string $model = 'gpt-4o';
-    protected int $max_tokens = 1000;
-    protected float $temperature = 1.0;
+    protected int $max_tokens = 4096;
+    protected float $temperature = 0.7;
 
     public function __construct(
         protected readonly string $system,
