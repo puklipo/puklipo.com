@@ -23,12 +23,12 @@ class IndexNow
         ])->status();
     }
 
-    public static function submit_if(bool $boolean, string $url): int
+    public static function submitIf(bool $boolean, string $url): int
     {
-        return static::submit_unless(! $boolean, $url);
+        return static::submitUnless(! $boolean, $url);
     }
 
-    public static function submit_unless(bool $boolean, string $url): int
+    public static function submitUnless(bool $boolean, string $url): int
     {
         if ($boolean) {
             return 0;
