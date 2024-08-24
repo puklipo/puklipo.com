@@ -9,15 +9,15 @@ use Livewire\Component;
 class StatusShow extends Component
 {
     public Status $status;
+    public string $description;
 
     public function render(): View
     {
         $title = $this->status->headline;
 
-        $description = str($this->status->content)->replace(PHP_EOL, ' ')->truncate(150)->value();
+        $this->description = str($this->status->content)->replace(PHP_EOL, ' ')->truncate(150)->value();
 
         return view('livewire.status-show')
-            ->layoutData(compact('description'))
             ->title($title);
     }
 }
