@@ -1,4 +1,4 @@
-<div class="p-3 border-b border-gray-200 dark:border-gray-500 hover:bg-indigo-50 dark:hover:bg-gray-800" wire:key="{{ $status->id }}">
+<div class="p-3 border-b border-gray-200 dark:border-gray-500 hover:bg-indigo-50 dark:hover:bg-gray-800" wire:key="status-{{ $status->id }}">
     <div class="flex justify-between">
         <div class="font-extrabold text-lg inline-flex items-center">
             {{ $status->user->name }}
@@ -22,12 +22,12 @@
         <div>{{ \App\Support\Markdown::parse($status->content) }}</div>
 
         @if($status->user->id === config('puklipo.users.tips'))
-            <livewire:status-vote :$status wire:key="{{ $status->id }}"></livewire:status-vote>
+            <livewire:status-vote :$status wire:key="vote-{{ $status->id }}"></livewire:status-vote>
         @endif
     </div>
 
     @can('admin')
-        <livewire:status-trans :$status />
+        <livewire:status-trans :$status wire:key="trans-{{ $status->id }}"/>
 
         <div class="flex justify-end">
             <a href="{{ route('status.edit', $status) }}"

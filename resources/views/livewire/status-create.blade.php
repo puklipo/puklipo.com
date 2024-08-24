@@ -6,7 +6,7 @@
             <x-input-label for="title" :value="__('タイトル')" class="hidden"/>
             <x-text-input id="title" name="title" title="タイトル"
                         class="block mt-1 w-full"
-                        rows="3" :value="old('title')"
+                        :value="old('title')"
                         wire:model.live="title"
                         wire:ignore></x-text-input>
 
