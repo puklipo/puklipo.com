@@ -9,7 +9,7 @@
         <x-input-error :messages="$errors->get('search')" class="mt-2"/>
     </div>
 
-    <div>
+    <div class="prose prose-indigo dark:prose-invert prose-md max-w-none sm:col-span-2">
         @foreach($this->statuses as $status)
             @include('status.item')
         @endforeach
