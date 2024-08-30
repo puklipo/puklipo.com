@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7342828ed52fa38eee5959262ce643af",
+    "content-hash": "2cd09b6819b14b7e4272fdf8660d384d",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4281,6 +4281,63 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "revolution/laravel-bluesky",
+            "version": "0.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kawax/laravel-bluesky.git",
+                "reference": "f895945691ead4196d352684f69dcf7c3204704e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/f895945691ead4196d352684f69dcf7c3204704e",
+                "reference": "f895945691ead4196d352684f69dcf7c3204704e",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.8",
+                "illuminate/support": "^11.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Revolution\\Bluesky\\BlueskyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Revolution\\Bluesky\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "kawax",
+                    "email": "kawaxbiz@gmail.com"
+                }
+            ],
+            "description": "Laravel Bluesky",
+            "keywords": [
+                "atproto",
+                "bluesky",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/kawax/laravel-bluesky/issues",
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.3.2"
+            },
+            "time": "2024-08-25T02:29:05+00:00"
         },
         {
             "name": "revolution/laravel-nostr",

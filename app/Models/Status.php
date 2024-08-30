@@ -4,11 +4,14 @@ namespace App\Models;
 
 use App\Casts\Headline;
 use App\Models\Concerns\StatusFeed;
+use App\Notifications\StatusCreatedNotification;
 use App\Support\IndexNow;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Facades\Notification;
+use Revolution\Bluesky\Notifications\BlueskyRoute;
 use Spatie\Feed\Feedable;
 
 use function Illuminate\Events\queueable;
@@ -41,6 +44,9 @@ class Status extends Model implements Feedable
     {
         static::created(queueable(function (Status $status) {
             IndexNow::submitIf(app()->isProduction(), route('status.show', $status));
+
+            Notification::route('bluesky', BlueskyRoute::to(identifier: config('bluesky.identifier'), password: config('bluesky.password')))
+                ->notify(new StatusCreatedNotification($status));
         }));
 
         static::updated(queueable(function (Status $status) {
