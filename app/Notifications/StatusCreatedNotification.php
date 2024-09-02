@@ -37,9 +37,11 @@ class StatusCreatedNotification extends Notification implements ShouldQueue
 
     public function toBluesky(object $notifiable): BlueskyMessage
     {
-        $text = $this->status->headline.PHP_EOL;
-        $text .= route('status.show', $this->status);
+        $text = $this->status->headline;
+        $link = route('status.show', $this->status);
 
-        return BlueskyMessage::create(text: $text);
+        return BlueskyMessage::create(text: $text)
+            ->text(text: PHP_EOL)
+            ->link(text: $link, uri: $link);
     }
 }
