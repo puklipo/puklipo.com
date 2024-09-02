@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2cd09b6819b14b7e4272fdf8660d384d",
+    "content-hash": "0b4ae942a6618075b7ce48766fc1c07a",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4284,16 +4284,16 @@
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.3.2",
+            "version": "0.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "f895945691ead4196d352684f69dcf7c3204704e"
+                "reference": "796420c87c8fe2715da5dee7ae6e05b6663b2438"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/f895945691ead4196d352684f69dcf7c3204704e",
-                "reference": "f895945691ead4196d352684f69dcf7c3204704e",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/796420c87c8fe2715da5dee7ae6e05b6663b2438",
+                "reference": "796420c87c8fe2715da5dee7ae6e05b6663b2438",
                 "shasum": ""
             },
             "require": {
@@ -4335,9 +4335,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-bluesky/issues",
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.3.2"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.4.5"
             },
-            "time": "2024-08-25T02:29:05+00:00"
+            "time": "2024-09-02T05:46:20+00:00"
         },
         {
             "name": "revolution/laravel-nostr",

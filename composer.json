@@ -20,7 +20,7 @@
         "spatie/laravel-feed": "^4.4",
         "spatie/laravel-sitemap": "^7.2",
         "torann/json-ld": "^0.0.19",
-        "revolution/laravel-bluesky": "^0.3.2"
+        "revolution/laravel-bluesky": "^0.4.5"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.0",
