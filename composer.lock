@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b4ae942a6618075b7ce48766fc1c07a",
+    "content-hash": "eb6d8078e596789efe0a5d53b3d714d5",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4284,21 +4284,21 @@
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.4.6",
+            "version": "0.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "3daaeb57f9730ce538e7be6f830bf75862a21e41"
+                "reference": "cc1ae507421655663cbed087367a67d3a5ade7ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/3daaeb57f9730ce538e7be6f830bf75862a21e41",
-                "reference": "3daaeb57f9730ce538e7be6f830bf75862a21e41",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/cc1ae507421655663cbed087367a67d3a5ade7ef",
+                "reference": "cc1ae507421655663cbed087367a67d3a5ade7ef",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.8",
-                "illuminate/support": "^11.0",
+                "illuminate/support": "^11.20",
                 "php": "^8.2"
             },
             "require-dev": {
@@ -4334,9 +4334,9 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.4.6"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.5.3"
             },
-            "time": "2024-09-03T02:32:22+00:00"
+            "time": "2024-09-04T05:51:42+00:00"
         },
         {
             "name": "revolution/laravel-nostr",
@@ -9938,16 +9938,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.31.2",
+            "version": "v1.31.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "b4af38e1ab16fe7aa729eddf5b810229f42d2ad3"
+                "reference": "0a7e2891a85eba2d448a9ffc6fc5ce367e924bc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/b4af38e1ab16fe7aa729eddf5b810229f42d2ad3",
-                "reference": "b4af38e1ab16fe7aa729eddf5b810229f42d2ad3",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/0a7e2891a85eba2d448a9ffc6fc5ce367e924bc1",
+                "reference": "0a7e2891a85eba2d448a9ffc6fc5ce367e924bc1",
                 "shasum": ""
             },
             "require": {
@@ -9997,7 +9997,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2024-09-03T13:44:23+00:00"
+            "time": "2024-09-03T20:05:33+00:00"
         },
         {
             "name": "mockery/mockery",

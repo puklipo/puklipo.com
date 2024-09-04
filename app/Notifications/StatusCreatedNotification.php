@@ -7,6 +7,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Collection;
+use Revolution\Bluesky\Embed\External;
 use Revolution\Bluesky\Notifications\BlueskyChannel;
 use Revolution\Bluesky\Notifications\BlueskyMessage;
 
@@ -38,10 +39,14 @@ class StatusCreatedNotification extends Notification implements ShouldQueue
     public function toBluesky(object $notifiable): BlueskyMessage
     {
         $text = $this->status->headline;
-        $link = route('status.show', $this->status);
+
+        $card = External::create(
+            title: $text,
+            description: '...',
+            uri: route('status.show', $this->status),
+        );
 
         return BlueskyMessage::create(text: $text)
-            ->text(text: PHP_EOL)
-            ->link(text: $link, uri: $link);
+            ->embed($card);
     }
 }
