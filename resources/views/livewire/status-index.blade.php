@@ -1,7 +1,7 @@
 <div>
-    @can('admin')
+    @canany(['admin', 'tips'])
         <livewire:status-create></livewire:status-create>
-    @endcan
+    @endcanany
 
     <div id="status">
         <livewire:status-filter></livewire:status-filter>
