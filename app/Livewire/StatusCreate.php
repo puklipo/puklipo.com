@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 use Livewire\Attributes\On;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
@@ -27,7 +28,9 @@ class StatusCreate extends Component
      */
     public function create(Request $request): void
     {
-        $this->authorize('admin');
+        if (Gate::none(['admin', 'tips'])) {
+            throw new AuthorizationException;
+        }
 
         $this->validate();
 
