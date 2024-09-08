@@ -8,7 +8,7 @@
             </li>
             <li>
                 <a href="https://github.com/pop-culture-studio"
-                   class="text-indigo-500 font-bold underline">GitHub</a>
+                   class="text-indigo-500 font-bold underline" target="_blank">GitHub</a>
             </li>
         </ul>
     </div>
