@@ -10,6 +10,8 @@ use Illuminate\Support\Collection;
 use Revolution\Bluesky\Embed\External;
 use Revolution\Bluesky\Notifications\BlueskyChannel;
 use Revolution\Bluesky\Notifications\BlueskyMessage;
+use Revolution\Threads\Notifications\ThreadsChannel;
+use Revolution\Threads\Notifications\ThreadsMessage;
 
 class StatusCreatedNotification extends Notification implements ShouldQueue
 {
@@ -31,8 +33,8 @@ class StatusCreatedNotification extends Notification implements ShouldQueue
     public function via(object $notifiable): array
     {
         return collect()
-            ->when($this->status->user_id === config('puklipo.users.admin') && app()->isProduction(), function (Collection $collection) {
-                $collection->push(BlueskyChannel::class);
+            ->when($this->status->user_id === config('puklipo.users.admin'), function (Collection $collection) {
+                $collection->push(BlueskyChannel::class, ThreadsChannel::class);
             })->toArray();
     }
 
@@ -48,5 +50,13 @@ class StatusCreatedNotification extends Notification implements ShouldQueue
 
         return BlueskyMessage::create(text: $text)
             ->embed($card);
+    }
+
+    public function toThreads(object $notifiable): ThreadsMessage
+    {
+        $text = $this->status->headline.PHP_EOL;
+        $text .= route('status.show', $this->status);
+
+        return ThreadsMessage::create(text: $text);
     }
 }

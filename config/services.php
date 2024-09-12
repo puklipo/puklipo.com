@@ -35,4 +35,7 @@ return [
         ],
     ],
 
+    'threads' => [
+        'token' => env('THREADS_TESTER_TOKEN', ''),
+    ],
 ];

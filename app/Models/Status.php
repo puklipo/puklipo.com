@@ -6,6 +6,7 @@ use App\Casts\Headline;
 use App\Models\Concerns\StatusFeed;
 use App\Notifications\StatusCreatedNotification;
 use App\Support\IndexNow;
+use App\Support\ThreadsToken;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -45,8 +46,11 @@ class Status extends Model implements Feedable
         static::created(queueable(function (Status $status) {
             IndexNow::submitIf(app()->isProduction(), route('status.show', $status));
 
-            Notification::route('bluesky', BlueskyRoute::to(identifier: config('bluesky.identifier'), password: config('bluesky.password')))
-                ->notify(new StatusCreatedNotification($status));
+            if (app()->isProduction()) {
+                Notification::route('bluesky', BlueskyRoute::to(identifier: config('bluesky.identifier'), password: config('bluesky.password')))
+                    ->route('threads', app(ThreadsToken::class)->get())
+                    ->notify(new StatusCreatedNotification($status));
+            }
         }));
 
         static::updated(queueable(function (Status $status) {
