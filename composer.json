@@ -15,13 +15,14 @@
         "livewire/livewire": "^3.0",
         "openai-php/laravel": "^0.10.1",
         "puklipo/laravel-vapor-gzip": "^1.1",
+        "revolution/laravel-bluesky": "^0.6.2",
         "revolution/laravel-nostr": "^0.3.0",
+        "revolution/laravel-notification-discord-webhook": "^1.1",
         "revolution/laravel-str-mixins": "^2.4",
+        "revolution/laravel-threads": "^0.2.1",
         "spatie/laravel-feed": "^4.4",
         "spatie/laravel-sitemap": "^7.2",
-        "torann/json-ld": "^0.0.19",
-        "revolution/laravel-bluesky": "^0.6.2",
-        "revolution/laravel-threads": "^0.2.1"
+        "torann/json-ld": "^0.0.19"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.0",

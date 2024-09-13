@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f5948028c83a11ef8fc15ec6916ac5b5",
+    "content-hash": "acfab9b9154796b77ea3a86cbd72afc0",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4834,6 +4834,54 @@
                 "source": "https://github.com/kawax/laravel-nostr/tree/0.3.6"
             },
             "time": "2024-06-25T00:49:38+00:00"
+        },
+        {
+            "name": "revolution/laravel-notification-discord-webhook",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kawax/laravel-notification-discord-webhook.git",
+                "reference": "f07951c6e52007410fbdabce3e11e676a1547181"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kawax/laravel-notification-discord-webhook/zipball/f07951c6e52007410fbdabce3e11e676a1547181",
+                "reference": "f07951c6e52007410fbdabce3e11e676a1547181",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/notifications": "^10.0||^11.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0||^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Revolution\\Laravel\\Notification\\DiscordWebhook\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "kawax",
+                    "email": "kawaxbiz@gmail.com"
+                }
+            ],
+            "description": "Laravel Notification for Discord(Webhook)",
+            "keywords": [
+                "discord",
+                "laravel",
+                "notification"
+            ],
+            "support": {
+                "source": "https://github.com/kawax/laravel-notification-discord-webhook/tree/1.1.4"
+            },
+            "time": "2024-05-22T01:11:49+00:00"
         },
         {
             "name": "revolution/laravel-str-mixins",

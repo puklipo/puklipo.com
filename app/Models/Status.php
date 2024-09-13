@@ -49,6 +49,7 @@ class Status extends Model implements Feedable
             if (app()->isProduction()) {
                 Notification::route('bluesky', BlueskyRoute::to(identifier: config('bluesky.identifier'), password: config('bluesky.password')))
                     ->route('threads', app(ThreadsToken::class)->get())
+                    ->route('discord-webhook', config('services.discord.webhook'))
                     ->notify(new StatusCreatedNotification($status));
             }
         }));

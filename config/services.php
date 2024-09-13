@@ -38,4 +38,8 @@ return [
     'threads' => [
         'token' => env('THREADS_TESTER_TOKEN', ''),
     ],
+
+    'discord' => [
+        'webhook' => env('DISCORD_WEBHOOK'),
+    ],
 ];
