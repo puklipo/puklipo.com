@@ -32,7 +32,7 @@ trait StatusFeed
     public function getFeedItems(): Collection
     {
         return static::with('user')
-            ->where('user_id', config('puklipo.users.admin'))
+            //->where('user_id', config('puklipo.users.admin'))
             ->latest()
             ->take(20)
             ->get();
