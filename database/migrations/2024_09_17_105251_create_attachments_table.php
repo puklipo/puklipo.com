@@ -19,8 +19,8 @@ return new class extends Migration
             $table->integer('length')->default(0);
 
             $table->foreignUlid('status_id')
-                ->cascadeOnDelete()
-                ->constrained();
+                ->constrained()
+                ->cascadeOnDelete();
 
             $table->timestamps();
         });
