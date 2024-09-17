@@ -19,6 +19,8 @@
             <h2>{{ $status->title }}</h2>
         @endif
 
+        <livewire:status-audio :$status wire:key="audio-{{ $status->id }}"></livewire:status-audio>
+
         <div>{{ \App\Support\Markdown::parse($status->content) }}</div>
 
         @if($status->user->id === config('puklipo.users.tips'))

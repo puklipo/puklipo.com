@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Facades\Notification;
 use Revolution\Bluesky\Notifications\BlueskyRoute;
 use Spatie\Feed\Feedable;
@@ -33,6 +34,8 @@ class Status extends Model implements Feedable
         'nostr_id',
         'created_at',
     ];
+
+    protected $with = ['user', 'attachment'];
 
     protected function casts(): array
     {
@@ -62,5 +65,10 @@ class Status extends Model implements Feedable
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function attachment(): HasOne
+    {
+        return $this->hasOne(Attachment::class);
     }
 }

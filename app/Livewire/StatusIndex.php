@@ -23,11 +23,11 @@ class StatusIndex extends Component
     #[Computed]
     public function statuses(): Paginator
     {
-        return Status::with('user')
-            ->when(session()->has('status_filter'),
-                fn (Builder $query) => $query->whereIntegerInRaw('user_id', session('status_filter', collect(config('puklipo.users'))
-                    ->values()
-                    ->toArray())))
+        return Status::when(
+            session()->has('status_filter'),
+            fn (Builder $query) => $query->whereIntegerInRaw('user_id', session('status_filter', collect(config('puklipo.users'))
+                ->values()
+                ->toArray())))
             ->latest()
             ->simplePaginate();
     }
