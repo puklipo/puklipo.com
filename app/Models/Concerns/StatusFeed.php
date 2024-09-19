@@ -11,14 +11,13 @@ trait StatusFeed
 {
     public function toFeedItem(): FeedItem
     {
-        $item = FeedItem::create([
-            'id' => $this->id,
-            'title' => empty($this->title) ? $this->created_at : $this->title,
-            'summary' => Markdown::parse($this->content),
-            'updated' => $this->updated_at,
-            'link' => route('status.show', $this),
-            'authorName' => $this->user->name,
-        ]);
+        $item = FeedItem::create()
+            ->id($this->id)
+            ->title($this->headline)
+            ->summary(Markdown::parse($this->content))
+            ->updated($this->updated_at)
+            ->link(route('status.show', $this))
+            ->authorName($this->user->name);
 
         if ($this->attachment?->exists) {
             $item->enclosure(Storage::url($this->attachment->file))
@@ -31,9 +30,7 @@ trait StatusFeed
 
     public function getFeedItems(): Collection
     {
-        return static::with('user')
-            //->where('user_id', config('puklipo.users.admin'))
-            ->latest()
+        return static::latest()
             ->take(20)
             ->get();
     }
