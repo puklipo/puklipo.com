@@ -12,6 +12,7 @@ use Revolution\Bluesky\Embed\External;
 use Revolution\Bluesky\Notifications\BlueskyChannel;
 use Revolution\Bluesky\Notifications\BlueskyMessage;
 use Revolution\Laravel\Notification\DiscordWebhook\DiscordChannel;
+use Revolution\Laravel\Notification\DiscordWebhook\DiscordEmbed;
 use Revolution\Laravel\Notification\DiscordWebhook\DiscordMessage;
 use Revolution\Threads\Notifications\ThreadsChannel;
 use Revolution\Threads\Notifications\ThreadsMessage;
@@ -66,10 +67,10 @@ class StatusCreatedNotification extends Notification implements ShouldQueue
     public function toDiscordWebhook(object $notifiable): DiscordMessage
     {
         return DiscordMessage::create()
-            ->embeds([[
-                'title' => $this->status->headline,
-                'description' => Str::truncate($this->status->content),
-                'url' => route('status.show', $this->status),
-            ]]);
+            ->embed(DiscordEmbed::make(
+                title: $this->status->headline,
+                description: Str::truncate($this->status->content),
+                url: route('status.show', $this->status),
+            ));
     }
 }
