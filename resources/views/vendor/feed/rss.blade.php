@@ -23,7 +23,12 @@
                 <title>{!! \Spatie\Feed\Helpers\Cdata::out($item->title) !!}</title>
                 <link>{{ url($item->link) }}</link>
                 <description>{!! \Spatie\Feed\Helpers\Cdata::out($item->summary) !!}</description>
-                <author>{!! \Spatie\Feed\Helpers\Cdata::out($item->authorName.(empty($item->authorEmail)?'':' <'.$item->authorEmail.'>')) !!}</author>
+                <atom:author>
+                    <name>{!! \Spatie\Feed\Helpers\Cdata::out($item->authorName) !!}</name>
+                    @if(!empty($item->authorEmail))
+                        <email>{!! \Spatie\Feed\Helpers\Cdata::out($item->authorEmail) !!}</email>
+                    @endif
+                </atom:author>
                 <guid>{{ url($item->id) }}</guid>
                 <pubDate>{{ $item->timestamp() }}</pubDate>
                 @foreach($item->category as $category)
