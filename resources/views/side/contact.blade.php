@@ -7,7 +7,7 @@
                    class="text-indigo-500 font-bold underline">e-mail</a>
             </li>
             <li>
-                <a href="https://github.com/pop-culture-studio"
+                <a href="https://github.com/puklipo"
                    class="text-indigo-500 font-bold underline" target="_blank">GitHub</a>
             </li>
         </ul>
