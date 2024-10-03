@@ -27,6 +27,12 @@
                 @if(!empty($item->authorEmail))
                     <author>{!! \Spatie\Feed\Helpers\Cdata::out($item->authorEmail) !!}</author>
                 @endif
+                <atom:author>
+                    <name>{!! \Spatie\Feed\Helpers\Cdata::out($item->authorName) !!}</name>
+                    @if(!empty($item->authorEmail))
+                        <email>{!! \Spatie\Feed\Helpers\Cdata::out($item->authorEmail) !!}</email>
+                    @endif
+                </atom:author>
                 <guid>{{ url($item->id) }}</guid>
                 <pubDate>{{ $item->timestamp() }}</pubDate>
                 @foreach($item->category as $category)
