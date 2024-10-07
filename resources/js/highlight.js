@@ -4,11 +4,18 @@ import php from 'highlight.js/lib/languages/php';
 import css from 'highlight.js/lib/languages/css';
 import javascript from 'highlight.js/lib/languages/javascript';
 import json from 'highlight.js/lib/languages/json';
+import yaml from 'highlight.js/lib/languages/yaml';
+import shell from 'highlight.js/lib/languages/shell';
+import bash from 'highlight.js/lib/languages/bash';
 
 hljs.registerLanguage('php', php);
 hljs.registerLanguage('css', css);
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('json', json);
+hljs.registerLanguage('yaml', yaml);
+hljs.registerLanguage('shell', shell);
+hljs.registerLanguage('bash', bash);
+
 hljs.highlightAll()
 
 Livewire.hook('commit', ({ component, commit, respond, succeed, fail }) => {
