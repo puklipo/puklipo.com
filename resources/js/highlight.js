@@ -2,9 +2,13 @@ import hljs from 'highlight.js/lib/core';
 import 'highlight.js/styles/devibeans.css'
 import php from 'highlight.js/lib/languages/php';
 import css from 'highlight.js/lib/languages/css';
+import javascript from 'highlight.js/lib/languages/javascript';
+import json from 'highlight.js/lib/languages/json';
 
 hljs.registerLanguage('php', php);
 hljs.registerLanguage('css', css);
+hljs.registerLanguage('javascript', javascript);
+hljs.registerLanguage('json', json);
 hljs.highlightAll()
 
 Livewire.hook('commit', ({ component, commit, respond, succeed, fail }) => {
