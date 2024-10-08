@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.323.1",
+            "version": "3.323.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "1b393c41a73e1ef4c493c60c5eee0bb4b0632264"
+                "reference": "030b93340f0e7d6fd20276037087d3eab8f16575"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1b393c41a73e1ef4c493c60c5eee0bb4b0632264",
-                "reference": "1b393c41a73e1ef4c493c60c5eee0bb4b0632264",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/030b93340f0e7d6fd20276037087d3eab8f16575",
+                "reference": "030b93340f0e7d6fd20276037087d3eab8f16575",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.323.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.323.2"
             },
-            "time": "2024-10-04T18:07:17+00:00"
+            "time": "2024-10-07T18:11:24+00:00"
         },
         {
             "name": "brick/math",
@@ -4725,16 +4725,16 @@
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.6.3",
+            "version": "0.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "b2b94c5ccb9f0a3940787b7224d51fcbeab76c1c"
+                "reference": "f0a943a58b50b5c170c44b43d2b374d7f14086dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/b2b94c5ccb9f0a3940787b7224d51fcbeab76c1c",
-                "reference": "b2b94c5ccb9f0a3940787b7224d51fcbeab76c1c",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/f0a943a58b50b5c170c44b43d2b374d7f14086dd",
+                "reference": "f0a943a58b50b5c170c44b43d2b374d7f14086dd",
                 "shasum": ""
             },
             "require": {
@@ -4776,9 +4776,9 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.6.3"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.6.4"
             },
-            "time": "2024-09-16T07:11:11+00:00"
+            "time": "2024-10-07T04:00:55+00:00"
         },
         {
             "name": "revolution/laravel-nostr",
