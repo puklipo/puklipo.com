@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.324.12",
+            "version": "3.324.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "c4aea23ee93e4567e353a0f3b907d154056bf4f6"
+                "reference": "781cb9594f7d1754c888452f980748115fd159d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c4aea23ee93e4567e353a0f3b907d154056bf4f6",
-                "reference": "c4aea23ee93e4567e353a0f3b907d154056bf4f6",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/781cb9594f7d1754c888452f980748115fd159d3",
+                "reference": "781cb9594f7d1754c888452f980748115fd159d3",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.324.12"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.324.13"
             },
-            "time": "2024-10-28T18:07:02+00:00"
+            "time": "2024-10-29T18:11:10+00:00"
         },
         {
             "name": "bitwasp/bech32",
@@ -5083,16 +5083,16 @@
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.7.6",
+            "version": "0.7.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "9996739e5a51b99ad4f4ed0308c20ea01b8a4439"
+                "reference": "9b7ab7286e7e9ee38b03b76c664f99e454e5b1af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/9996739e5a51b99ad4f4ed0308c20ea01b8a4439",
-                "reference": "9996739e5a51b99ad4f4ed0308c20ea01b8a4439",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/9b7ab7286e7e9ee38b03b76c664f99e454e5b1af",
+                "reference": "9b7ab7286e7e9ee38b03b76c664f99e454e5b1af",
                 "shasum": ""
             },
             "require": {
@@ -5136,22 +5136,22 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.7.6"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.7.7"
             },
-            "time": "2024-10-28T07:26:09+00:00"
+            "time": "2024-10-29T23:59:35+00:00"
         },
         {
             "name": "revolution/laravel-nostr",
-            "version": "0.6.7",
+            "version": "0.6.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-nostr.git",
-                "reference": "8d98fa983b14cc3973308b88761d98251c189345"
+                "reference": "88ac3bb227ee8831756c92e4994ab9c90234bc12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-nostr/zipball/8d98fa983b14cc3973308b88761d98251c189345",
-                "reference": "8d98fa983b14cc3973308b88761d98251c189345",
+                "url": "https://api.github.com/repos/kawax/laravel-nostr/zipball/88ac3bb227ee8831756c92e4994ab9c90234bc12",
+                "reference": "88ac3bb227ee8831756c92e4994ab9c90234bc12",
                 "shasum": ""
             },
             "require": {
@@ -5196,9 +5196,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-nostr/issues",
-                "source": "https://github.com/kawax/laravel-nostr/tree/0.6.7"
+                "source": "https://github.com/kawax/laravel-nostr/tree/0.6.9"
             },
-            "time": "2024-10-29T01:08:05+00:00"
+            "time": "2024-10-29T04:48:40+00:00"
         },
         {
             "name": "revolution/laravel-notification-discord-webhook",
@@ -9057,16 +9057,16 @@
         },
         {
             "name": "barryvdh/laravel-ide-helper",
-            "version": "v3.2.1",
+            "version": "v3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-ide-helper.git",
-                "reference": "800e2347a6ecf997200f447c9fdbe3dce3a797f3"
+                "reference": "07e3bd8796f3d1414801a03d3783f9d3ec9efc08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/800e2347a6ecf997200f447c9fdbe3dce3a797f3",
-                "reference": "800e2347a6ecf997200f447c9fdbe3dce3a797f3",
+                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/07e3bd8796f3d1414801a03d3783f9d3ec9efc08",
+                "reference": "07e3bd8796f3d1414801a03d3783f9d3ec9efc08",
                 "shasum": ""
             },
             "require": {
@@ -9135,7 +9135,7 @@
             ],
             "support": {
                 "issues": "https://github.com/barryvdh/laravel-ide-helper/issues",
-                "source": "https://github.com/barryvdh/laravel-ide-helper/tree/v3.2.1"
+                "source": "https://github.com/barryvdh/laravel-ide-helper/tree/v3.2.2"
             },
             "funding": [
                 {
@@ -9147,7 +9147,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-28T11:32:31+00:00"
+            "time": "2024-10-29T14:00:16+00:00"
         },
         {
             "name": "barryvdh/reflection-docblock",
