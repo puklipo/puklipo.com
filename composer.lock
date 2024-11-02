@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.325.1",
+            "version": "3.325.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5ac57c98062f1c45d094c2baa94a7e557989465f"
+                "reference": "9e354a5e0cd1d563ec85245e3000e98e16a44fce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5ac57c98062f1c45d094c2baa94a7e557989465f",
-                "reference": "5ac57c98062f1c45d094c2baa94a7e557989465f",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9e354a5e0cd1d563ec85245e3000e98e16a44fce",
+                "reference": "9e354a5e0cd1d563ec85245e3000e98e16a44fce",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.325.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.325.2"
             },
-            "time": "2024-10-31T18:15:14+00:00"
+            "time": "2024-11-01T18:08:38+00:00"
         },
         {
             "name": "bitwasp/bech32",
@@ -5142,16 +5142,16 @@
         },
         {
             "name": "revolution/laravel-nostr",
-            "version": "0.6.9",
+            "version": "0.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-nostr.git",
-                "reference": "88ac3bb227ee8831756c92e4994ab9c90234bc12"
+                "reference": "f7233abc013ffdd127bf52bfbe6c7be450e15553"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-nostr/zipball/88ac3bb227ee8831756c92e4994ab9c90234bc12",
-                "reference": "88ac3bb227ee8831756c92e4994ab9c90234bc12",
+                "url": "https://api.github.com/repos/kawax/laravel-nostr/zipball/f7233abc013ffdd127bf52bfbe6c7be450e15553",
+                "reference": "f7233abc013ffdd127bf52bfbe6c7be450e15553",
                 "shasum": ""
             },
             "require": {
@@ -5196,9 +5196,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-nostr/issues",
-                "source": "https://github.com/kawax/laravel-nostr/tree/0.6.9"
+                "source": "https://github.com/kawax/laravel-nostr/tree/0.6.10"
             },
-            "time": "2024-10-29T04:48:40+00:00"
+            "time": "2024-11-01T11:52:06+00:00"
         },
         {
             "name": "revolution/laravel-notification-discord-webhook",
@@ -10325,16 +10325,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "15.8.1",
+            "version": "15.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "361a2b1bbf8078811e4cf2ea52c4e132d6a6f162"
+                "reference": "66ec02476ac4dca9d562160819823e5e66907d86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/361a2b1bbf8078811e4cf2ea52c4e132d6a6f162",
-                "reference": "361a2b1bbf8078811e4cf2ea52c4e132d6a6f162",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/66ec02476ac4dca9d562160819823e5e66907d86",
+                "reference": "66ec02476ac4dca9d562160819823e5e66907d86",
                 "shasum": ""
             },
             "require": {
@@ -10384,7 +10384,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2024-10-02T14:08:06+00:00"
+            "time": "2024-11-01T09:45:36+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
