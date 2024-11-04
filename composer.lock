@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "246e160d8e53aec9b370ac23d73679ef",
+    "content-hash": "19a9a0d0f6086d0432f5abc9216876a6",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -5083,16 +5083,16 @@
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.7.16",
+            "version": "0.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "f37cebb5bb009fc87e6bd7cdafe4a118bf7caeea"
+                "reference": "9987cdf7f56626592bae7a9269765c19c33feee0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/f37cebb5bb009fc87e6bd7cdafe4a118bf7caeea",
-                "reference": "f37cebb5bb009fc87e6bd7cdafe4a118bf7caeea",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/9987cdf7f56626592bae7a9269765c19c33feee0",
+                "reference": "9987cdf7f56626592bae7a9269765c19c33feee0",
                 "shasum": ""
             },
             "require": {
@@ -5133,12 +5133,14 @@
             "keywords": [
                 "atproto",
                 "bluesky",
-                "laravel"
+                "laravel",
+                "notifications",
+                "socialite"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.7.16"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.9.3"
             },
-            "time": "2024-10-31T04:40:12+00:00"
+            "time": "2024-11-04T07:55:02+00:00"
         },
         {
             "name": "revolution/laravel-nostr",
@@ -13161,12 +13163,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
