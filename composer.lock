@@ -5083,16 +5083,16 @@
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.9.3",
+            "version": "0.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "9987cdf7f56626592bae7a9269765c19c33feee0"
+                "reference": "4a9beed1234f01804a2a5bdb6605c15986a9c5f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/9987cdf7f56626592bae7a9269765c19c33feee0",
-                "reference": "9987cdf7f56626592bae7a9269765c19c33feee0",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/4a9beed1234f01804a2a5bdb6605c15986a9c5f8",
+                "reference": "4a9beed1234f01804a2a5bdb6605c15986a9c5f8",
                 "shasum": ""
             },
             "require": {
@@ -5110,7 +5110,7 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Revolution\\Bluesky\\BlueskyServiceProvider"
+                        "Revolution\\Bluesky\\Providers\\BlueskyServiceProvider"
                     ]
                 }
             },
@@ -5138,9 +5138,9 @@
                 "socialite"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.9.3"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.9.4"
             },
-            "time": "2024-11-04T07:55:02+00:00"
+            "time": "2024-11-04T23:42:34+00:00"
         },
         {
             "name": "revolution/laravel-nostr",
@@ -9914,16 +9914,16 @@
         },
         {
             "name": "laravel-lang/actions",
-            "version": "1.8.7",
+            "version": "1.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/actions.git",
-                "reference": "f982195c759d58f1b755919f4acb4b34c5e0e175"
+                "reference": "64d2b6221db930e374b0c3dd2017f8ecca1bc93b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/f982195c759d58f1b755919f4acb4b34c5e0e175",
-                "reference": "f982195c759d58f1b755919f4acb4b34c5e0e175",
+                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/64d2b6221db930e374b0c3dd2017f8ecca1bc93b",
+                "reference": "64d2b6221db930e374b0c3dd2017f8ecca1bc93b",
                 "shasum": ""
             },
             "require": {
@@ -9975,9 +9975,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/actions/issues",
-                "source": "https://github.com/Laravel-Lang/actions/tree/1.8.7"
+                "source": "https://github.com/Laravel-Lang/actions/tree/1.8.8"
             },
-            "time": "2024-11-03T20:09:38+00:00"
+            "time": "2024-11-04T19:29:17+00:00"
         },
         {
             "name": "laravel-lang/attributes",
@@ -13163,12 +13163,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
