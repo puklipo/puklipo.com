@@ -5082,17 +5082,63 @@
             "time": "2024-04-27T21:32:50+00:00"
         },
         {
-            "name": "revolution/laravel-bluesky",
-            "version": "0.9.4",
+            "name": "revolution/atproto-lexicon-contracts",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "4a9beed1234f01804a2a5bdb6605c15986a9c5f8"
+                "url": "https://github.com/kawax/atproto-lexicon-contracts.git",
+                "reference": "433b161b3e2b42859591a29a47a66360907f05db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/4a9beed1234f01804a2a5bdb6605c15986a9c5f8",
-                "reference": "4a9beed1234f01804a2a5bdb6605c15986a9c5f8",
+                "url": "https://api.github.com/repos/kawax/atproto-lexicon-contracts/zipball/433b161b3e2b42859591a29a47a66360907f05db",
+                "reference": "433b161b3e2b42859591a29a47a66360907f05db",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Revolution\\AtProto\\Lexicon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "kawax",
+                    "email": "kawaxbiz@gmail.com"
+                }
+            ],
+            "description": "Auto generated pure PHP interface and enum",
+            "keywords": [
+                "Lexicon",
+                "atproto",
+                "bluesky",
+                "contracts"
+            ],
+            "support": {
+                "issues": "https://github.com/kawax/atproto-lexicon-contracts/issues",
+                "source": "https://github.com/kawax/atproto-lexicon-contracts/tree/1.0.3"
+            },
+            "time": "2024-11-05T07:47:22+00:00"
+        },
+        {
+            "name": "revolution/laravel-bluesky",
+            "version": "0.9.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kawax/laravel-bluesky.git",
+                "reference": "e3c0a4c0a5d7ea470eea878045654a0326017580"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/e3c0a4c0a5d7ea470eea878045654a0326017580",
+                "reference": "e3c0a4c0a5d7ea470eea878045654a0326017580",
                 "shasum": ""
             },
             "require": {
@@ -5101,7 +5147,8 @@
                 "illuminate/support": "^11.20",
                 "laravel/socialite": "^5.16",
                 "php": "^8.2",
-                "phpseclib/phpseclib": "^3.0"
+                "phpseclib/phpseclib": "^3.0",
+                "revolution/atproto-lexicon-contracts": "^1.0"
             },
             "require-dev": {
                 "orchestra/testbench": "^9.0"
@@ -5138,9 +5185,9 @@
                 "socialite"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.9.4"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.9.6"
             },
-            "time": "2024-11-04T23:42:34+00:00"
+            "time": "2024-11-05T11:15:30+00:00"
         },
         {
             "name": "revolution/laravel-nostr",
@@ -6052,16 +6099,16 @@
         },
         {
             "name": "swentel/nostr-php",
-            "version": "1.4.2",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nostrver-se/nostr-php.git",
-                "reference": "212fed712745203b3af6815a2765c1377fa6920f"
+                "reference": "3f42292207d21a479c8656c6269a0de0e9fad927"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nostrver-se/nostr-php/zipball/212fed712745203b3af6815a2765c1377fa6920f",
-                "reference": "212fed712745203b3af6815a2765c1377fa6920f",
+                "url": "https://api.github.com/repos/nostrver-se/nostr-php/zipball/3f42292207d21a479c8656c6269a0de0e9fad927",
+                "reference": "3f42292207d21a479c8656c6269a0de0e9fad927",
                 "shasum": ""
             },
             "require": {
@@ -6113,9 +6160,9 @@
                 "chat": "https://t.me/nostr_php",
                 "issue": "https://github.com/swentel/nostr-php/issues",
                 "issues": "https://github.com/nostrver-se/nostr-php/issues",
-                "source": "https://github.com/nostrver-se/nostr-php/tree/1.4.2"
+                "source": "https://github.com/nostrver-se/nostr-php/tree/1.5.0"
             },
-            "time": "2024-10-18T07:56:36+00:00"
+            "time": "2024-11-05T12:08:34+00:00"
         },
         {
             "name": "symfony/clock",
