@@ -10,7 +10,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Revolution\Bluesky\Embed\External;
 use Revolution\Bluesky\Notifications\BlueskyChannel;
-use Revolution\Bluesky\Notifications\BlueskyMessage;
+use Revolution\Bluesky\Record\Post;
 use Revolution\Laravel\Notification\DiscordWebhook\DiscordChannel;
 use Revolution\Laravel\Notification\DiscordWebhook\DiscordEmbed;
 use Revolution\Laravel\Notification\DiscordWebhook\DiscordMessage;
@@ -42,7 +42,7 @@ class StatusCreatedNotification extends Notification implements ShouldQueue
             })->toArray();
     }
 
-    public function toBluesky(object $notifiable): BlueskyMessage
+    public function toBluesky(object $notifiable): Post
     {
         $text = $this->status->headline;
 
@@ -52,7 +52,7 @@ class StatusCreatedNotification extends Notification implements ShouldQueue
             uri: route('status.show', $this->status),
         );
 
-        return BlueskyMessage::create(text: $text)
+        return Post::create(text: $text)
             ->embed($card);
     }
 
