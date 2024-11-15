@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.326.0",
+            "version": "3.327.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5420284de9aad84e375fa8012cefd834bebfd623"
+                "reference": "ba4a7ac2544de61b33f693c461f8b09c0353298f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5420284de9aad84e375fa8012cefd834bebfd623",
-                "reference": "5420284de9aad84e375fa8012cefd834bebfd623",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ba4a7ac2544de61b33f693c461f8b09c0353298f",
+                "reference": "ba4a7ac2544de61b33f693c461f8b09c0353298f",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.326.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.327.0"
             },
-            "time": "2024-11-13T19:07:44+00:00"
+            "time": "2024-11-14T19:06:19+00:00"
         },
         {
             "name": "bitwasp/bech32",
@@ -5085,16 +5085,16 @@
         },
         {
             "name": "revolution/atproto-lexicon-contracts",
-            "version": "1.0.27",
+            "version": "1.0.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/atproto-lexicon-contracts.git",
-                "reference": "4efe85ac0489b4839670ad9e2bf3e78574da3363"
+                "reference": "bd0e9a26e17dac4273fb5bd5bec4e5d2a2676dac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/atproto-lexicon-contracts/zipball/4efe85ac0489b4839670ad9e2bf3e78574da3363",
-                "reference": "4efe85ac0489b4839670ad9e2bf3e78574da3363",
+                "url": "https://api.github.com/repos/kawax/atproto-lexicon-contracts/zipball/bd0e9a26e17dac4273fb5bd5bec4e5d2a2676dac",
+                "reference": "bd0e9a26e17dac4273fb5bd5bec4e5d2a2676dac",
                 "shasum": ""
             },
             "require": {
@@ -5128,22 +5128,22 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/atproto-lexicon-contracts/issues",
-                "source": "https://github.com/kawax/atproto-lexicon-contracts/tree/1.0.27"
+                "source": "https://github.com/kawax/atproto-lexicon-contracts/tree/1.0.28"
             },
-            "time": "2024-11-13T08:25:12+00:00"
+            "time": "2024-11-14T03:38:55+00:00"
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.12.3",
+            "version": "0.12.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "919b606cb44d1b0d19536ce152c9823e8a893403"
+                "reference": "5ca8377f4dd0016444710dc21eadaecaf3db2a0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/919b606cb44d1b0d19536ce152c9823e8a893403",
-                "reference": "919b606cb44d1b0d19536ce152c9823e8a893403",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/5ca8377f4dd0016444710dc21eadaecaf3db2a0f",
+                "reference": "5ca8377f4dd0016444710dc21eadaecaf3db2a0f",
                 "shasum": ""
             },
             "require": {
@@ -5190,9 +5190,9 @@
                 "socialite"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.12.3"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.12.5"
             },
-            "time": "2024-11-13T05:33:49+00:00"
+            "time": "2024-11-14T23:44:45+00:00"
         },
         {
             "name": "revolution/laravel-nostr",
