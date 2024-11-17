@@ -5134,16 +5134,16 @@
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.12.6",
+            "version": "0.12.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "2183928b6236af04286c413bbb4cb41f759ce2c7"
+                "reference": "eb395ba564c12d04038919d24d0da1abc3c0722b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/2183928b6236af04286c413bbb4cb41f759ce2c7",
-                "reference": "2183928b6236af04286c413bbb4cb41f759ce2c7",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/eb395ba564c12d04038919d24d0da1abc3c0722b",
+                "reference": "eb395ba564c12d04038919d24d0da1abc3c0722b",
                 "shasum": ""
             },
             "require": {
@@ -5190,9 +5190,9 @@
                 "socialite"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.12.6"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.12.7"
             },
-            "time": "2024-11-15T13:09:32+00:00"
+            "time": "2024-11-16T09:24:30+00:00"
         },
         {
             "name": "revolution/laravel-nostr",
@@ -10379,16 +10379,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "15.9.3",
+            "version": "15.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "48f7e2401929b15f0beff9a78e168e9596beea0b"
+                "reference": "112273e3d30ab52cbb8420418f923b3e3c998c93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/48f7e2401929b15f0beff9a78e168e9596beea0b",
-                "reference": "48f7e2401929b15f0beff9a78e168e9596beea0b",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/112273e3d30ab52cbb8420418f923b3e3c998c93",
+                "reference": "112273e3d30ab52cbb8420418f923b3e3c998c93",
                 "shasum": ""
             },
             "require": {
@@ -10438,7 +10438,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2024-11-04T11:47:57+00:00"
+            "time": "2024-11-16T23:04:53+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
