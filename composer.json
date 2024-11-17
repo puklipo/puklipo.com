@@ -19,7 +19,7 @@
         "revolution/laravel-nostr": "^0.6.0",
         "revolution/laravel-notification-discord-webhook": "^1.1",
         "revolution/laravel-str-mixins": "^2.4",
-        "revolution/laravel-threads": "^0.2.1",
+        "revolution/laravel-threads": "^0.3.0",
         "spatie/laravel-feed": "^4.4",
         "spatie/laravel-sitemap": "^7.2",
         "torann/json-ld": "^0.0.19"

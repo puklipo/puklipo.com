@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92903e222d59c7c668f32a9d4adf18e9",
+    "content-hash": "2a26385ad834ce8e845626118ae7f893",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -5362,16 +5362,16 @@
         },
         {
             "name": "revolution/laravel-threads",
-            "version": "0.2.2",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-threads.git",
-                "reference": "77de479ac250d583b376776584aadc65a2b15ab5"
+                "reference": "218ec4c5fef4efa2f453ae6d0f4230d8852d3da1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-threads/zipball/77de479ac250d583b376776584aadc65a2b15ab5",
-                "reference": "77de479ac250d583b376776584aadc65a2b15ab5",
+                "url": "https://api.github.com/repos/kawax/laravel-threads/zipball/218ec4c5fef4efa2f453ae6d0f4230d8852d3da1",
+                "reference": "218ec4c5fef4efa2f453ae6d0f4230d8852d3da1",
                 "shasum": ""
             },
             "require": {
@@ -5413,9 +5413,9 @@
                 "threads"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-threads/tree/0.2.2"
+                "source": "https://github.com/kawax/laravel-threads/tree/0.3.0"
             },
-            "time": "2024-09-16T08:33:00+00:00"
+            "time": "2024-11-16T11:57:05+00:00"
         },
         {
             "name": "riverline/multipart-parser",
@@ -13215,12 +13215,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
