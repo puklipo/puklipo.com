@@ -24,7 +24,7 @@ class StatusCreatedNotification extends Notification implements ShouldQueue
     /**
      * Create a new notification instance.
      */
-    public function __construct(protected Status $status)
+    public function __construct(protected readonly Status $status)
     {
         //
     }
