@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.328.0",
+            "version": "3.328.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "a99b58e166ae367f2b067937afb04e843e900745"
+                "reference": "52d8219935146c3261181de2da4d36bf04c76298"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a99b58e166ae367f2b067937afb04e843e900745",
-                "reference": "a99b58e166ae367f2b067937afb04e843e900745",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/52d8219935146c3261181de2da4d36bf04c76298",
+                "reference": "52d8219935146c3261181de2da4d36bf04c76298",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.328.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.328.1"
             },
-            "time": "2024-11-15T19:06:57+00:00"
+            "time": "2024-11-18T19:13:28+00:00"
         },
         {
             "name": "bitwasp/bech32",
@@ -5085,16 +5085,16 @@
         },
         {
             "name": "revolution/atproto-lexicon-contracts",
-            "version": "1.0.28",
+            "version": "1.0.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/atproto-lexicon-contracts.git",
-                "reference": "bd0e9a26e17dac4273fb5bd5bec4e5d2a2676dac"
+                "reference": "f1a1d4b73163443fd05dd5849f0ed3756632b4cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/atproto-lexicon-contracts/zipball/bd0e9a26e17dac4273fb5bd5bec4e5d2a2676dac",
-                "reference": "bd0e9a26e17dac4273fb5bd5bec4e5d2a2676dac",
+                "url": "https://api.github.com/repos/kawax/atproto-lexicon-contracts/zipball/f1a1d4b73163443fd05dd5849f0ed3756632b4cc",
+                "reference": "f1a1d4b73163443fd05dd5849f0ed3756632b4cc",
                 "shasum": ""
             },
             "require": {
@@ -5127,23 +5127,22 @@
                 "contracts"
             ],
             "support": {
-                "issues": "https://github.com/kawax/atproto-lexicon-contracts/issues",
-                "source": "https://github.com/kawax/atproto-lexicon-contracts/tree/1.0.28"
+                "source": "https://github.com/kawax/atproto-lexicon-contracts/tree/1.0.30"
             },
-            "time": "2024-11-14T03:38:55+00:00"
+            "time": "2024-11-19T01:13:54+00:00"
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.13.0",
+            "version": "0.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "79914b1d1100dbaa94ed2ef28610700badbee255"
+                "reference": "a20b7d5d7695d67a7b574bf67024832276dc65a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/79914b1d1100dbaa94ed2ef28610700badbee255",
-                "reference": "79914b1d1100dbaa94ed2ef28610700badbee255",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/a20b7d5d7695d67a7b574bf67024832276dc65a7",
+                "reference": "a20b7d5d7695d67a7b574bf67024832276dc65a7",
                 "shasum": ""
             },
             "require": {
@@ -5154,7 +5153,7 @@
                 "laravel/socialite": "^5.16",
                 "php": "^8.2",
                 "phpseclib/phpseclib": "^3.0",
-                "revolution/atproto-lexicon-contracts": "^1.0.28",
+                "revolution/atproto-lexicon-contracts": "1.0.30",
                 "valtzu/guzzle-websocket-middleware": "^0.2.0"
             },
             "require-dev": {
@@ -5192,9 +5191,9 @@
                 "socialite"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.13.0"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.13.2"
             },
-            "time": "2024-11-18T01:57:54+00:00"
+            "time": "2024-11-19T01:32:17+00:00"
         },
         {
             "name": "revolution/laravel-nostr",
@@ -5852,16 +5851,16 @@
         },
         {
             "name": "spatie/laravel-package-tools",
-            "version": "1.16.5",
+            "version": "1.16.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "c7413972cf22ffdff97b68499c22baa04eddb6a2"
+                "reference": "1f26942dc1e5c49eacfced34fdbc29ed234bd7b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/c7413972cf22ffdff97b68499c22baa04eddb6a2",
-                "reference": "c7413972cf22ffdff97b68499c22baa04eddb6a2",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/1f26942dc1e5c49eacfced34fdbc29ed234bd7b3",
+                "reference": "1f26942dc1e5c49eacfced34fdbc29ed234bd7b3",
                 "shasum": ""
             },
             "require": {
@@ -5900,7 +5899,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.5"
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.6"
             },
             "funding": [
                 {
@@ -5908,7 +5907,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-08-27T18:56:10+00:00"
+            "time": "2024-11-18T15:02:02+00:00"
         },
         {
             "name": "spatie/laravel-sitemap",
@@ -13217,12 +13216,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
