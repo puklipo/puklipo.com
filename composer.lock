@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.328.2",
+            "version": "3.328.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "63a6366a8011dffec3d1ef838c97ca6b6ddb17a2"
+                "reference": "bceb5a6443ecd51e988ef28af70210f7168ad0e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/63a6366a8011dffec3d1ef838c97ca6b6ddb17a2",
-                "reference": "63a6366a8011dffec3d1ef838c97ca6b6ddb17a2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/bceb5a6443ecd51e988ef28af70210f7168ad0e5",
+                "reference": "bceb5a6443ecd51e988ef28af70210f7168ad0e5",
                 "shasum": ""
             },
             "require": {
@@ -101,7 +101,7 @@
                 "paragonie/random_compat": ">= 2",
                 "phpunit/phpunit": "^5.6.3 || ^8.5 || ^9.5",
                 "psr/cache": "^1.0",
-                "psr/simple-cache": "^1.0",
+                "psr/simple-cache": "^1.0 || ^2.0 || ^3.0",
                 "sebastian/comparator": "^1.2.3 || ^4.0",
                 "yoast/phpunit-polyfills": "^1.0"
             },
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.328.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.328.3"
             },
-            "time": "2024-11-19T20:28:51+00:00"
+            "time": "2024-11-20T19:04:23+00:00"
         },
         {
             "name": "bitwasp/bech32",
@@ -5085,16 +5085,16 @@
         },
         {
             "name": "revolution/atproto-lexicon-contracts",
-            "version": "1.0.30",
+            "version": "1.0.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/atproto-lexicon-contracts.git",
-                "reference": "f1a1d4b73163443fd05dd5849f0ed3756632b4cc"
+                "reference": "c1eaa128cc83fde4119202b87bb584d06157754f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/atproto-lexicon-contracts/zipball/f1a1d4b73163443fd05dd5849f0ed3756632b4cc",
-                "reference": "f1a1d4b73163443fd05dd5849f0ed3756632b4cc",
+                "url": "https://api.github.com/repos/kawax/atproto-lexicon-contracts/zipball/c1eaa128cc83fde4119202b87bb584d06157754f",
+                "reference": "c1eaa128cc83fde4119202b87bb584d06157754f",
                 "shasum": ""
             },
             "require": {
@@ -5127,22 +5127,22 @@
                 "contracts"
             ],
             "support": {
-                "source": "https://github.com/kawax/atproto-lexicon-contracts/tree/1.0.30"
+                "source": "https://github.com/kawax/atproto-lexicon-contracts/tree/1.0.31"
             },
-            "time": "2024-11-19T01:13:54+00:00"
+            "time": "2024-11-20T03:26:02+00:00"
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.13.3",
+            "version": "0.13.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "97f3b46dd516713d329c47f7fbcd7a15123060cf"
+                "reference": "b660096bee37a32015f42f47b57b027d6e31b509"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/97f3b46dd516713d329c47f7fbcd7a15123060cf",
-                "reference": "97f3b46dd516713d329c47f7fbcd7a15123060cf",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/b660096bee37a32015f42f47b57b027d6e31b509",
+                "reference": "b660096bee37a32015f42f47b57b027d6e31b509",
                 "shasum": ""
             },
             "require": {
@@ -5153,7 +5153,7 @@
                 "laravel/socialite": "^5.16",
                 "php": "^8.2",
                 "phpseclib/phpseclib": "^3.0",
-                "revolution/atproto-lexicon-contracts": "1.0.30",
+                "revolution/atproto-lexicon-contracts": "1.0.31",
                 "valtzu/guzzle-websocket-middleware": "^0.2.0"
             },
             "require-dev": {
@@ -5191,9 +5191,9 @@
                 "socialite"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.13.3"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.13.5"
             },
-            "time": "2024-11-19T12:55:50+00:00"
+            "time": "2024-11-20T13:30:40+00:00"
         },
         {
             "name": "revolution/laravel-nostr",
@@ -8932,16 +8932,16 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "b56450eed252f6801410d810c8e1727224ae0743"
+                "reference": "16c17671a804bb92602822113dd91fbc8a35d2af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/b56450eed252f6801410d810c8e1727224ae0743",
-                "reference": "b56450eed252f6801410d810c8e1727224ae0743",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/16c17671a804bb92602822113dd91fbc8a35d2af",
+                "reference": "16c17671a804bb92602822113dd91fbc8a35d2af",
                 "shasum": ""
             },
             "require": {
@@ -8966,7 +8966,7 @@
             "authors": [
                 {
                     "name": "Lars Moelleken",
-                    "homepage": "http://www.moelleken.org/"
+                    "homepage": "https://www.moelleken.org/"
                 }
             ],
             "description": "Portable ASCII library - performance optimized (ascii) string functions for php.",
@@ -8978,7 +8978,7 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/portable-ascii/issues",
-                "source": "https://github.com/voku/portable-ascii/tree/2.0.1"
+                "source": "https://github.com/voku/portable-ascii/tree/2.0.2"
             },
             "funding": [
                 {
@@ -9002,7 +9002,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-08T17:03:00+00:00"
+            "time": "2024-11-21T00:49:12+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -11098,16 +11098,16 @@
         },
         {
             "name": "laravel/pint",
-            "version": "v1.18.1",
+            "version": "v1.18.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/pint.git",
-                "reference": "35c00c05ec43e6b46d295efc0f4386ceb30d50d9"
+                "reference": "f55daaf7eb6c2f49ddf6702fb42e3091c64d8a64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/pint/zipball/35c00c05ec43e6b46d295efc0f4386ceb30d50d9",
-                "reference": "35c00c05ec43e6b46d295efc0f4386ceb30d50d9",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/f55daaf7eb6c2f49ddf6702fb42e3091c64d8a64",
+                "reference": "f55daaf7eb6c2f49ddf6702fb42e3091c64d8a64",
                 "shasum": ""
             },
             "require": {
@@ -11160,7 +11160,7 @@
                 "issues": "https://github.com/laravel/pint/issues",
                 "source": "https://github.com/laravel/pint"
             },
-            "time": "2024-09-24T17:22:50+00:00"
+            "time": "2024-11-20T09:33:46+00:00"
         },
         {
             "name": "laravel/sail",
