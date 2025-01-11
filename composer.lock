@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.336.12",
+            "version": "3.336.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "a173ab3af8d9186d266e4937d8254597f36a9e15"
+                "reference": "dcb43c029ca74c52fa03a739341cc77086296a83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a173ab3af8d9186d266e4937d8254597f36a9e15",
-                "reference": "a173ab3af8d9186d266e4937d8254597f36a9e15",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/dcb43c029ca74c52fa03a739341cc77086296a83",
+                "reference": "dcb43c029ca74c52fa03a739341cc77086296a83",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.336.12"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.336.13"
             },
-            "time": "2025-01-09T19:04:34+00:00"
+            "time": "2025-01-10T19:04:25+00:00"
         },
         {
             "name": "bitwasp/bech32",
@@ -4286,16 +4286,16 @@
         },
         {
             "name": "phrity/websocket",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sirn-se/websocket-php.git",
-                "reference": "52a3744573ecc1b740f03bca3d5d6f3088bd16f3"
+                "reference": "6dceb42be8bfd500806a5508721ae14cf0d4d737"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sirn-se/websocket-php/zipball/52a3744573ecc1b740f03bca3d5d6f3088bd16f3",
-                "reference": "52a3744573ecc1b740f03bca3d5d6f3088bd16f3",
+                "url": "https://api.github.com/repos/sirn-se/websocket-php/zipball/6dceb42be8bfd500806a5508721ae14cf0d4d737",
+                "reference": "6dceb42be8bfd500806a5508721ae14cf0d4d737",
                 "shasum": ""
             },
             "require": {
@@ -4307,6 +4307,7 @@
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.0",
+                "phpstan/phpstan": "^2.0",
                 "phpunit/phpunit": "^10.0 | ^11.0",
                 "phrity/net-mock": "^2.1",
                 "phrity/util-errorhandler": "^1.1",
@@ -4341,9 +4342,9 @@
             ],
             "support": {
                 "issues": "https://github.com/sirn-se/websocket-php/issues",
-                "source": "https://github.com/sirn-se/websocket-php/tree/3.2.1"
+                "source": "https://github.com/sirn-se/websocket-php/tree/3.2.2"
             },
-            "time": "2025-01-03T12:41:36+00:00"
+            "time": "2025-01-10T09:41:26+00:00"
         },
         {
             "name": "psr/clock",
@@ -10174,16 +10175,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "15.11.6",
+            "version": "15.11.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "0937695ccc9cb1efb22164253d4ab51ebedf0a56"
+                "reference": "9196e2cf0763d6b98764edb8020bfb82678a8ceb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/0937695ccc9cb1efb22164253d4ab51ebedf0a56",
-                "reference": "0937695ccc9cb1efb22164253d4ab51ebedf0a56",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/9196e2cf0763d6b98764edb8020bfb82678a8ceb",
+                "reference": "9196e2cf0763d6b98764edb8020bfb82678a8ceb",
                 "shasum": ""
             },
             "require": {
@@ -10233,7 +10234,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2025-01-01T14:21:28+00:00"
+            "time": "2025-01-09T06:58:50+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
