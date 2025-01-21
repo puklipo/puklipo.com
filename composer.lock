@@ -6011,16 +6011,16 @@
         },
         {
             "name": "spatie/laravel-package-tools",
-            "version": "1.18.0",
+            "version": "1.18.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "8332205b90d17164913244f4a8e13ab7e6761d29"
+                "reference": "d41c44a7eab604c3eb0cad93210612d4c1429c20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/8332205b90d17164913244f4a8e13ab7e6761d29",
-                "reference": "8332205b90d17164913244f4a8e13ab7e6761d29",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/d41c44a7eab604c3eb0cad93210612d4c1429c20",
+                "reference": "d41c44a7eab604c3eb0cad93210612d4c1429c20",
                 "shasum": ""
             },
             "require": {
@@ -6059,7 +6059,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.18.0"
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.18.2"
             },
             "funding": [
                 {
@@ -6067,7 +6067,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-30T13:13:39+00:00"
+            "time": "2025-01-20T14:14:17+00:00"
         },
         {
             "name": "spatie/laravel-sitemap",
@@ -8966,25 +8966,22 @@
         },
         {
             "name": "uma/phpecc",
-            "version": "v0.2.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/1ma/phpecc.git",
-                "reference": "8952716a7378a829b9ce50535e913f6592664173"
+                "reference": "e269be5eaef099fb46831037d097c647a6da2f69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/1ma/phpecc/zipball/8952716a7378a829b9ce50535e913f6592664173",
-                "reference": "8952716a7378a829b9ce50535e913f6592664173",
+                "url": "https://api.github.com/repos/1ma/phpecc/zipball/e269be5eaef099fb46831037d097c647a6da2f69",
+                "reference": "e269be5eaef099fb46831037d097c647a6da2f69",
                 "shasum": ""
             },
             "require": {
                 "ext-gmp": "*",
                 "php": "^8.0",
                 "uma/phpasn1": "^2.5.1"
-            },
-            "replace": {
-                "mdanter/ecc": "1.0.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.0",
@@ -9045,9 +9042,9 @@
                 "secp256r1"
             ],
             "support": {
-                "source": "https://github.com/1ma/phpecc/tree/v0.2.0"
+                "source": "https://github.com/1ma/phpecc/tree/v0.2.1"
             },
-            "time": "2024-11-29T17:59:36+00:00"
+            "time": "2025-01-21T00:38:50+00:00"
         },
         {
             "name": "valtzu/guzzle-websocket-middleware",
