@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.339.13",
+            "version": "3.339.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "16b291be8ed930b87267552faeb9974aa3a2e6da"
+                "reference": "532eb5e502c5b1181456023e41d61445b2c7101d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/16b291be8ed930b87267552faeb9974aa3a2e6da",
-                "reference": "16b291be8ed930b87267552faeb9974aa3a2e6da",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/532eb5e502c5b1181456023e41d61445b2c7101d",
+                "reference": "532eb5e502c5b1181456023e41d61445b2c7101d",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.339.13"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.339.14"
             },
-            "time": "2025-02-13T19:07:55+00:00"
+            "time": "2025-02-14T19:11:38+00:00"
         },
         {
             "name": "bitwasp/bech32",
@@ -5783,16 +5783,16 @@
         },
         {
             "name": "spatie/browsershot",
-            "version": "5.0.6",
+            "version": "5.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/browsershot.git",
-                "reference": "0bb1832bdc2ed7d7d61e99c66ece817385d3b46c"
+                "reference": "d09837ff17e3d894a4a3cf913bdc03dab6c2d276"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/browsershot/zipball/0bb1832bdc2ed7d7d61e99c66ece817385d3b46c",
-                "reference": "0bb1832bdc2ed7d7d61e99c66ece817385d3b46c",
+                "url": "https://api.github.com/repos/spatie/browsershot/zipball/d09837ff17e3d894a4a3cf913bdc03dab6c2d276",
+                "reference": "d09837ff17e3d894a4a3cf913bdc03dab6c2d276",
                 "shasum": ""
             },
             "require": {
@@ -5839,7 +5839,7 @@
                 "webpage"
             ],
             "support": {
-                "source": "https://github.com/spatie/browsershot/tree/5.0.6"
+                "source": "https://github.com/spatie/browsershot/tree/5.0.7"
             },
             "funding": [
                 {
@@ -5847,7 +5847,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-10T09:10:30+00:00"
+            "time": "2025-02-14T13:09:56+00:00"
         },
         {
             "name": "spatie/crawler",
@@ -5919,28 +5919,28 @@
         },
         {
             "name": "spatie/laravel-feed",
-            "version": "4.4.0",
+            "version": "4.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-feed.git",
-                "reference": "8cd283bbb998beb3ae220e71bae162e52dfbd1d9"
+                "reference": "71d298a8f0ed701eca87600e700fda3f24052a61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-feed/zipball/8cd283bbb998beb3ae220e71bae162e52dfbd1d9",
-                "reference": "8cd283bbb998beb3ae220e71bae162e52dfbd1d9",
+                "url": "https://api.github.com/repos/spatie/laravel-feed/zipball/71d298a8f0ed701eca87600e700fda3f24052a61",
+                "reference": "71d298a8f0ed701eca87600e700fda3f24052a61",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "^10.0|^11.0",
-                "illuminate/http": "^10.0|^11.0",
-                "illuminate/support": "^10.0|^11.0",
-                "php": "^8.0",
+                "illuminate/contracts": "^10.0|^11.0|^12.0",
+                "illuminate/http": "^10.0|^11.0|^12.0",
+                "illuminate/support": "^10.0|^11.0|^12.0",
+                "php": "^8.2",
                 "spatie/laravel-package-tools": "^1.15"
             },
             "require-dev": {
-                "orchestra/testbench": "^8.0|^9.0",
-                "pestphp/pest": "^2.0",
+                "orchestra/testbench": "^8.0|^9.0|^10.0",
+                "pestphp/pest": "^2.0|^3.0",
                 "spatie/pest-plugin-snapshots": "^2.0",
                 "spatie/test-time": "^1.2"
             },
@@ -5995,7 +5995,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/laravel-feed/tree/4.4.0"
+                "source": "https://github.com/spatie/laravel-feed/tree/4.4.1"
             },
             "funding": [
                 {
@@ -6007,7 +6007,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-01T10:20:32+00:00"
+            "time": "2025-02-14T12:40:17+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",
@@ -10617,16 +10617,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "15.13.0",
+            "version": "15.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "24b7968adbbc74a8067b76fbc2800ce2cd007bcb"
+                "reference": "2c979be83cca8b6eac2ce9cf1c05efef63146f03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/24b7968adbbc74a8067b76fbc2800ce2cd007bcb",
-                "reference": "24b7968adbbc74a8067b76fbc2800ce2cd007bcb",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/2c979be83cca8b6eac2ce9cf1c05efef63146f03",
+                "reference": "2c979be83cca8b6eac2ce9cf1c05efef63146f03",
                 "shasum": ""
             },
             "require": {
@@ -10676,7 +10676,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2025-02-06T10:38:55+00:00"
+            "time": "2025-02-14T12:37:16+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
