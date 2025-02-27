@@ -32,7 +32,7 @@
         </div>
 
         @if(filled($content))
-            <div class="px-3 mt-4 break-all border rounded-md shadow-sm dark:border-gray-700">
+            <div class="px-3 mt-4 break-all border rounded-md shadow-xs dark:border-gray-700">
                 <h4 class="font-bold text-gray-400">プレビュー</h4>
                 <h2>{{ $title }}</h2>
                 <div>{{ \App\Support\Markdown::parse($content) }}</div>

@@ -3,7 +3,7 @@
 
     <div class="mt-1">
         「インフラエンジニアがいないのでサポートして欲しい」や「稼働中のシステムをAWSに移行したい」など。
-        <div class="bg-white border rounded my-2">
+        <div class="bg-white border rounded-sm my-2">
             <div class="p-2"><span class="font-bold mr-3">料金目安</span>要見積。月額制。</div>
         </div>
     </div>
