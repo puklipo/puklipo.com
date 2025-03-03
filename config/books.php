@@ -2,7 +2,11 @@
 
 return [
     [
-        'title' => 'Laravel再入門 Vol.5 いろいろなサンプルプロジェクトの解説詰め合わせ',
+        'title' => 'Laravel再入門 Vol.6 いろいろなサンプルプロジェクトの解説詰め合わせ（Laravel 12）',
+        'url' => 'https://zenn.dev/pcs_engineer/books/re-laravel-6',
+    ],
+    [
+        'title' => 'Laravel再入門 Vol.5 いろいろなサンプルプロジェクトの解説詰め合わせ（Laravel 11）',
         'url' => 'https://zenn.dev/pcs_engineer/books/re-laravel-5',
     ],
     [
