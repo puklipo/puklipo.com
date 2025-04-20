@@ -5479,16 +5479,16 @@
         },
         {
             "name": "revolution/atproto-lexicon-contracts",
-            "version": "1.0.61",
+            "version": "1.0.68",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/atproto-lexicon-contracts.git",
-                "reference": "eef8aa118ff49d595bc37f244bb202483f3acf21"
+                "reference": "cb81f1816fa863378b1f729718e72722d97bc596"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/atproto-lexicon-contracts/zipball/eef8aa118ff49d595bc37f244bb202483f3acf21",
-                "reference": "eef8aa118ff49d595bc37f244bb202483f3acf21",
+                "url": "https://api.github.com/repos/kawax/atproto-lexicon-contracts/zipball/cb81f1816fa863378b1f729718e72722d97bc596",
+                "reference": "cb81f1816fa863378b1f729718e72722d97bc596",
                 "shasum": ""
             },
             "require": {
@@ -5522,22 +5522,22 @@
                 "contracts"
             ],
             "support": {
-                "source": "https://github.com/kawax/atproto-lexicon-contracts/tree/1.0.61"
+                "source": "https://github.com/kawax/atproto-lexicon-contracts/tree/1.0.68"
             },
-            "time": "2025-03-27T04:11:08+00:00"
+            "time": "2025-04-19T04:14:25+00:00"
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "e0ccfc093d1e0623725146bcd696f88590c57a47"
+                "reference": "ca17357cca13acc9369a1faeb237da92b91703f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/e0ccfc093d1e0623725146bcd696f88590c57a47",
-                "reference": "e0ccfc093d1e0623725146bcd696f88590c57a47",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/ca17357cca13acc9369a1faeb237da92b91703f0",
+                "reference": "ca17357cca13acc9369a1faeb237da92b91703f0",
                 "shasum": ""
             },
             "require": {
@@ -5548,7 +5548,7 @@
                 "laravel/socialite": "^5.16",
                 "php": "^8.2",
                 "phpseclib/phpseclib": "^3.0",
-                "revolution/atproto-lexicon-contracts": "1.0.61",
+                "revolution/atproto-lexicon-contracts": "1.0.68",
                 "yocto/yoclib-multibase": "^1.2"
             },
             "require-dev": {
@@ -5599,9 +5599,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-bluesky/issues",
-                "source": "https://github.com/kawax/laravel-bluesky/tree/1.0.2"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/1.0.3"
             },
-            "time": "2025-03-27T04:13:50+00:00"
+            "time": "2025-04-19T04:18:23+00:00"
         },
         {
             "name": "revolution/laravel-nostr",
