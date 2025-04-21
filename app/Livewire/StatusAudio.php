@@ -16,7 +16,7 @@ class StatusAudio extends Component
         $this->authorize('admin');
 
         $response = OpenAI::audio()->speech([
-            'model' => 'tts-1',
+            'model' => 'gpt-4o-mini-tts',
             'input' => $this->status->title.PHP_EOL.$this->status->content,
             'voice' => 'alloy',
         ]);
