@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.343.19",
+            "version": "3.343.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "00b44b1a9d570bc945d223b20886c1ac13b54641"
+                "reference": "bf40b00d2e1cbd2a5d8c903743073440d8ebb5dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/00b44b1a9d570bc945d223b20886c1ac13b54641",
-                "reference": "00b44b1a9d570bc945d223b20886c1ac13b54641",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/bf40b00d2e1cbd2a5d8c903743073440d8ebb5dc",
+                "reference": "bf40b00d2e1cbd2a5d8c903743073440d8ebb5dc",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.343.19"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.343.20"
             },
-            "time": "2025-05-27T18:10:12+00:00"
+            "time": "2025-05-28T18:10:03+00:00"
         },
         {
             "name": "bitwasp/bech32",
@@ -5779,12 +5779,12 @@
             "version": "1.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kawax/laravel-notification-discord-webhook.git",
+                "url": "https://github.com/invokable/laravel-notification-discord-webhook.git",
                 "reference": "3b1e4f39da82da8b6dd83359773986372a470c92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-notification-discord-webhook/zipball/3b1e4f39da82da8b6dd83359773986372a470c92",
+                "url": "https://api.github.com/repos/invokable/laravel-notification-discord-webhook/zipball/3b1e4f39da82da8b6dd83359773986372a470c92",
                 "reference": "3b1e4f39da82da8b6dd83359773986372a470c92",
                 "shasum": ""
             },
@@ -5818,7 +5818,7 @@
                 "notification"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-notification-discord-webhook/tree/1.3.0"
+                "source": "https://github.com/invokable/laravel-notification-discord-webhook/tree/1.3.0"
             },
             "time": "2025-02-23T03:37:07+00:00"
         },
