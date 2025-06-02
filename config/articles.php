@@ -1,6 +1,22 @@
 <?php
 
 return [
+            [
+        'title' => 'How to Pass Data to Layouts in Livewire Volt',
+        'url' => 'https://github.com/orgs/invokable/discussions/13',
+    ],
+        [
+        'title' => 'Laravel 11 Service Container Attributes Sample',
+        'url' => 'https://github.com/orgs/invokable/discussions/10',
+    ],
+    [
+        'title' => 'How to use Macroable',
+        'url' => 'https://github.com/orgs/invokable/discussions/9',
+    ],
+        [
+        'title' => 'How to use cron with Laravel Sail',
+        'url' => 'https://github.com/orgs/invokable/discussions/11',
+    ],
     [
         'title' => 'Laravel 11 Reverb Sample',
         'url' => 'https://github.com/orgs/invokable/discussions/14',
