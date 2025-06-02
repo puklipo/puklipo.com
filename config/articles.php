@@ -2,6 +2,10 @@
 
 return [
     [
+        'title' => 'New Norms and Things to Forget in the Laravel 12 Era',
+        'url' => 'https://github.com/orgs/invokable/discussions/2',
+    ],
+    [
         'title' => 'How to Pass Data to Layouts in Livewire Volt',
         'url' => 'https://github.com/orgs/invokable/discussions/13',
     ],
