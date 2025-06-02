@@ -48,6 +48,5 @@ return [
     [
         'title' => 'PHP Lacks unless, so Laravel\'s Similar Features are Subtly Useful',
         'url' => 'https://github.com/puklipo/articles/blob/main/laravel-unless.md',
-    ],url' => 'https://github.com/puklipo/articles/blob/main/livewire-paginators-with-octane.md',
     ],
 ];
