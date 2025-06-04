@@ -3,11 +3,7 @@
     <div class="py-3 text-lg">
         <ul>
             <li>
-                <a href="mailto:pcs.engineer.team@gmail.com"
-                   class="text-indigo-500 font-bold underline">e-mail</a>
-            </li>
-            <li>
-                <a href="https://github.com/puklipo"
+                <a href="https://github.com/invokable"
                    class="text-indigo-500 font-bold underline" target="_blank">GitHub</a>
             </li>
         </ul>
