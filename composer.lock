@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.343.24",
+            "version": "3.344.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5308e15ca92655906d04d5945613ab9046b4f79f"
+                "reference": "787a8ec6301657d9cbdb389db4fa92243c68666a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5308e15ca92655906d04d5945613ab9046b4f79f",
-                "reference": "5308e15ca92655906d04d5945613ab9046b4f79f",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/787a8ec6301657d9cbdb389db4fa92243c68666a",
+                "reference": "787a8ec6301657d9cbdb389db4fa92243c68666a",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.343.24"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.344.0"
             },
-            "time": "2025-06-03T18:04:18+00:00"
+            "time": "2025-06-04T18:36:41+00:00"
         },
         {
             "name": "bitwasp/bech32",
@@ -6627,16 +6627,16 @@
         },
         {
             "name": "swentel/nostr-php",
-            "version": "1.9.1",
+            "version": "1.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nostrver-se/nostr-php.git",
-                "reference": "8b742c4ec4636da79ca431264c2ffd9e27f6810d"
+                "reference": "8fb8337354b2e9d48a901276c7814d7fa7b25653"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nostrver-se/nostr-php/zipball/8b742c4ec4636da79ca431264c2ffd9e27f6810d",
-                "reference": "8b742c4ec4636da79ca431264c2ffd9e27f6810d",
+                "url": "https://api.github.com/repos/nostrver-se/nostr-php/zipball/8fb8337354b2e9d48a901276c7814d7fa7b25653",
+                "reference": "8fb8337354b2e9d48a901276c7814d7fa7b25653",
                 "shasum": ""
             },
             "require": {
@@ -6686,9 +6686,9 @@
                 "chat": "https://t.me/nostr_php",
                 "issue": "https://github.com/swentel/nostr-php/issues",
                 "issues": "https://github.com/nostrver-se/nostr-php/issues",
-                "source": "https://github.com/nostrver-se/nostr-php/tree/1.9.1"
+                "source": "https://github.com/nostrver-se/nostr-php/tree/1.9.2"
             },
-            "time": "2025-06-03T14:59:37+00:00"
+            "time": "2025-06-04T14:51:06+00:00"
         },
         {
             "name": "symfony/clock",
