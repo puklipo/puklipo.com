@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.344.7",
+            "version": "3.345.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "64ccde0a674425ea902232a6f7aa1a07dfcfe861"
+                "reference": "61b4675bc02db8d7f3e1ba6931dc827c5ae23aa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/64ccde0a674425ea902232a6f7aa1a07dfcfe861",
-                "reference": "64ccde0a674425ea902232a6f7aa1a07dfcfe861",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/61b4675bc02db8d7f3e1ba6931dc827c5ae23aa8",
+                "reference": "61b4675bc02db8d7f3e1ba6931dc827c5ae23aa8",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.344.7"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.345.0"
             },
-            "time": "2025-06-16T18:05:39+00:00"
+            "time": "2025-06-17T18:09:42+00:00"
         },
         {
             "name": "bitwasp/bech32",
@@ -1488,16 +1488,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.18.0",
+            "version": "v12.19.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "7d264a0dad2bfc5c154240b38e8ce9b2c4cdd14d"
+                "reference": "97c581cb23bdc3147aab0d5087b19167d329991e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/7d264a0dad2bfc5c154240b38e8ce9b2c4cdd14d",
-                "reference": "7d264a0dad2bfc5c154240b38e8ce9b2c4cdd14d",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/97c581cb23bdc3147aab0d5087b19167d329991e",
+                "reference": "97c581cb23bdc3147aab0d5087b19167d329991e",
                 "shasum": ""
             },
             "require": {
@@ -1699,7 +1699,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-06-10T14:48:34+00:00"
+            "time": "2025-06-17T23:44:27+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -5577,16 +5577,16 @@
         },
         {
             "name": "revolution/atproto-lexicon-contracts",
-            "version": "1.0.68",
+            "version": "1.0.73",
             "source": {
                 "type": "git",
                 "url": "https://github.com/invokable/atproto-lexicon-contracts.git",
-                "reference": "cb81f1816fa863378b1f729718e72722d97bc596"
+                "reference": "cd59174d1a51a830914e96fd586aa44fb1601ec6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/invokable/atproto-lexicon-contracts/zipball/cb81f1816fa863378b1f729718e72722d97bc596",
-                "reference": "cb81f1816fa863378b1f729718e72722d97bc596",
+                "url": "https://api.github.com/repos/invokable/atproto-lexicon-contracts/zipball/cd59174d1a51a830914e96fd586aa44fb1601ec6",
+                "reference": "cd59174d1a51a830914e96fd586aa44fb1601ec6",
                 "shasum": ""
             },
             "require": {
@@ -5620,7 +5620,7 @@
                 "contracts"
             ],
             "support": {
-                "source": "https://github.com/invokable/atproto-lexicon-contracts/tree/1.0.68"
+                "source": "https://github.com/invokable/atproto-lexicon-contracts/tree/1.0.73"
             },
             "funding": [
                 {
@@ -5628,20 +5628,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-19T04:14:25+00:00"
+            "time": "2025-06-07T04:05:32+00:00"
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/invokable/laravel-bluesky.git",
-                "reference": "ca17357cca13acc9369a1faeb237da92b91703f0"
+                "reference": "9bc6df730121634a9dd56ccf1feadd092995034b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/invokable/laravel-bluesky/zipball/ca17357cca13acc9369a1faeb237da92b91703f0",
-                "reference": "ca17357cca13acc9369a1faeb237da92b91703f0",
+                "url": "https://api.github.com/repos/invokable/laravel-bluesky/zipball/9bc6df730121634a9dd56ccf1feadd092995034b",
+                "reference": "9bc6df730121634a9dd56ccf1feadd092995034b",
                 "shasum": ""
             },
             "require": {
@@ -5652,13 +5652,12 @@
                 "laravel/socialite": "^5.16",
                 "php": "^8.2",
                 "phpseclib/phpseclib": "^3.0",
-                "revolution/atproto-lexicon-contracts": "1.0.68",
+                "revolution/atproto-lexicon-contracts": "1.0.73",
                 "yocto/yoclib-multibase": "^1.2"
             },
             "require-dev": {
-                "larastan/larastan": "^3.0",
+                "laravel/pint": "^1.22",
                 "orchestra/testbench": "^9.0||^10.0",
-                "phpstan/extension-installer": "^1.4",
                 "revolt/event-loop": "^1.0",
                 "workerman/workerman": "^5.0"
             },
@@ -5702,10 +5701,15 @@
                 "socialite"
             ],
             "support": {
-                "issues": "https://github.com/invokable/laravel-bluesky/issues",
-                "source": "https://github.com/invokable/laravel-bluesky/tree/1.0.3"
+                "source": "https://github.com/invokable/laravel-bluesky/tree/1.0.4"
             },
-            "time": "2025-04-19T04:18:23+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/invokable",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-06-17T05:06:24+00:00"
         },
         {
             "name": "revolution/laravel-nostr",
@@ -11553,16 +11557,16 @@
         },
         {
             "name": "laravel-lang/starter-kits",
-            "version": "1.3.8",
+            "version": "1.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/starter-kits.git",
-                "reference": "37884af8f9bdaf3cbc40716ddbe1b9e543bef615"
+                "reference": "41de7c50bc668925860b2895898232143fd7c90f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/starter-kits/zipball/37884af8f9bdaf3cbc40716ddbe1b9e543bef615",
-                "reference": "37884af8f9bdaf3cbc40716ddbe1b9e543bef615",
+                "url": "https://api.github.com/repos/Laravel-Lang/starter-kits/zipball/41de7c50bc668925860b2895898232143fd7c90f",
+                "reference": "41de7c50bc668925860b2895898232143fd7c90f",
                 "shasum": ""
             },
             "require": {
@@ -11614,22 +11618,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/starter-kits/issues",
-                "source": "https://github.com/Laravel-Lang/starter-kits/tree/1.3.8"
+                "source": "https://github.com/Laravel-Lang/starter-kits/tree/1.3.9"
             },
-            "time": "2025-05-11T00:05:02+00:00"
+            "time": "2025-06-17T13:06:04+00:00"
         },
         {
             "name": "laravel/breeze",
-            "version": "v2.3.6",
+            "version": "v2.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/breeze.git",
-                "reference": "390cbc433cb72fa6050965000b2d56c9ba6fd713"
+                "reference": "73149b5d84be3881b2fdda94b2ad289e7905c1a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/breeze/zipball/390cbc433cb72fa6050965000b2d56c9ba6fd713",
-                "reference": "390cbc433cb72fa6050965000b2d56c9ba6fd713",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/73149b5d84be3881b2fdda94b2ad289e7905c1a4",
+                "reference": "73149b5d84be3881b2fdda94b2ad289e7905c1a4",
                 "shasum": ""
             },
             "require": {
@@ -11677,7 +11681,7 @@
                 "issues": "https://github.com/laravel/breeze/issues",
                 "source": "https://github.com/laravel/breeze"
             },
-            "time": "2025-03-06T14:02:32+00:00"
+            "time": "2025-06-17T13:07:20+00:00"
         },
         {
             "name": "laravel/pint",
