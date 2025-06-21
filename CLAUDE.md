@@ -11,7 +11,7 @@ puklipo.com is a web application built with the following technologies:
 - **Build System**: Vite
 - **Languages**: PHP 8.2+, JavaScript, Japanese localization
 - **Deployment**: Laravel Vapor (AWS Lambda)
-- **License**: AGPL (Copyright ポップカルチャースタジオ未来図)
+- **License**: AGPL
 
 The site appears to be a status/post sharing platform with social media integration features.
 
