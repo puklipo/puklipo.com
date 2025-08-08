@@ -10,8 +10,8 @@
         "@tailwindcss/forms": "^0.5.2",
         "@tailwindcss/typography": "^0.5.9",
         "highlight.js": "^11.8.0",
-        "laravel-vite-plugin": "^1.0.0",
+        "laravel-vite-plugin": "^2.0.0",
         "tailwindcss": "^4.0.9",
-        "vite": "^6.0.11"
+        "vite": "^7.0"
     }
 }
