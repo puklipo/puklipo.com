@@ -4,6 +4,9 @@
     <div></div>
 
     <div class="mt-3 flex flex-row gap-2">
+        <a href="https://github.com/invokable" class="text-gray-600 dark:text-white no-underline inline-flex" title="GitHub" target="_blank">
+            <x-icon.github/>
+        </a>
         <a href="https://github.com/puklipo" class="text-gray-600 dark:text-white no-underline inline-flex" title="GitHub" target="_blank">
             <x-icon.github/>
         </a>
