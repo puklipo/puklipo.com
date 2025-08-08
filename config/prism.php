@@ -52,15 +52,15 @@ return [
             'url' => env('OPENROUTER_URL', 'https://openrouter.ai/api/v1'),
         ],
         'bedrock' => [ // Key should match Bedrock::KEY
-            'region' => env('AWS_REGION', 'us-west-2'),
+            'region' => env('BEDROCK_REGION', 'us-west-2'),
 
             // Set to true to ignore other auth configuration and use the AWS SDK default credential chain
             // read more at https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_credentials_default_chain.html
-            'use_default_credential_provider' => env('AWS_USE_DEFAULT_CREDENTIAL_PROVIDER', false),
+            'use_default_credential_provider' => env('BEDROCK_USE_DEFAULT_CREDENTIAL_PROVIDER', false),
 
-            'api_key' => env('AWS_ACCESS_KEY_ID'), //  Ignored with `use_default_credential_provider` === true
-            'api_secret' => env('AWS_SECRET_ACCESS_KEY'), //  Ignored with `use_default_credential_provider` === true
-            'session_token' => env('AWS_SESSION_TOKEN'), // Only required for temporary credentials. Ignored with `use_default_credential_provider` === true
+            'api_key' => env('BEDROCK_ACCESS_KEY_ID'), //  Ignored with `use_default_credential_provider` === true
+            'api_secret' => env('BEDROCK_SECRET_ACCESS_KEY'), //  Ignored with `use_default_credential_provider` === true
+            'session_token' => env('BEDROCK_SESSION_TOKEN'), // Only required for temporary credentials. Ignored with `use_default_credential_provider` === true
         ],
     ],
 ];
