@@ -14,7 +14,7 @@
         "laravel/vapor-core": "^2.37",
         "livewire/livewire": "^3.5",
         "prism-php/bedrock": "^1.5",
-        "prism-php/prism": "^0.83.2",
+        "prism-php/prism": "^0.84",
         "puklipo/laravel-vapor-gzip": "^1.3",
         "revolution/laravel-bluesky": "^1.0.0",
         "revolution/laravel-nostr": "^1.0.0",
